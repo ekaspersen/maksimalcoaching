@@ -50,7 +50,7 @@ export default function TjenesterCta() {
                     </div>
                     <div className="mt-auto flex flex-col items-center gap-2">
                         <ButtonPrimary>Velg pakke</ButtonPrimary>
-                        <span className="text-sm font-light italic">
+                        <span className="text-sm font-light italic text-clr_gray">
                             Fra 2100kr
                         </span>
                     </div>
@@ -93,7 +93,9 @@ export default function TjenesterCta() {
                     </div>
                     <div className="mt-auto flex flex-col items-center gap-2">
                         <ButtonPrimary>Velg pakke</ButtonPrimary>
-                        <span>Fra 1700kr</span>
+                        <span className="text-sm font-light italic text-clr_gray">
+                            Fra 1700kr
+                        </span>
                     </div>
                 </div>
                 <div className="flex flex-col items-center px-4 py-16 gap-16 bg-clr_black xl:flex-1">
@@ -130,7 +132,9 @@ export default function TjenesterCta() {
                     </div>
                     <div className="mt-auto flex flex-col items-center gap-2">
                         <ButtonPrimary>Velg pakke</ButtonPrimary>
-                        <span>Fra 1700kr</span>
+                        <span className="text-sm font-light italic text-clr_gray">
+                            Fra 1700kr
+                        </span>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    scroll-behavior: smooth;
+    @apply bg-clr_black text-clr_white;
+}
+li {
+    list-style-image: url("/listDiscArrow.svg");
+}
+p {
+    @apply text-sm lg:text-base font-medium;
+}
+.inner {
+    @apply max-w-[1440px] mx-auto px-4 lg:px-8;
+}
+.h1_text {
+    @apply text-3xl lg:text-5xl font-black italic;
+}
+.h1_subtext {
+    @apply text-base lg:text-xl font-black italic;
+}
+.h2_text {
+    @apply text-2xl lg:text-3xl font-black italic;
+}
+.h3_text {
+    @apply text-xl lg:text-2xl font-black italic;
+}
+.tiny_text {
+    @apply font-black italic text-[6px] sm:text-xs lg:text-base;
+}
+.button {
+    @apply lg:text-lg px-6 py-2 rounded-lg italic font-extrabold max-w-fit;
+}
+.herotxt {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+}
+.scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+}
+.scrollbar-hidden {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}

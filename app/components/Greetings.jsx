@@ -14,7 +14,9 @@ function Greetings() {
                     ønsker å ta treningen opp et nivå eller du starter helt fra
                     begynnelsen.
                 </p>
-                <ButtonSecondary>Finn din coach</ButtonSecondary>
+                <Link href="/team">
+                    <ButtonSecondary>Finn din coach</ButtonSecondary>
+                </Link>
             </div>
             <div className="py-8 max-w-xl lg:py-16 px-4 lg:pr-8 lg:pl-0 flex flex-col  gap-4 lg:gap-6 lg:flex-1">
                 <h2 className="h2_text">Litt om oss...</h2>

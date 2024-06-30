@@ -43,3 +43,8 @@ p {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
 }
+.custom-backround-w-gradient {
+    background-image: url("/womanlookingatman.jpg");
+    background-size: cover;
+    background-position: center;
+}

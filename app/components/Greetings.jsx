@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { ButtonPrimaryDark, ButtonSecondary } from "../utilities/Buttons";
 
 function Greetings() {

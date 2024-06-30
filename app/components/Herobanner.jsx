@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { ButtonGhost, ButtonPrimaryDark } from "../utilities/Buttons";
+import Link from "next/link";
 
 export default function Herobanner() {
     return (

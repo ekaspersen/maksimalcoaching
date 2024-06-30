@@ -1,18 +1,19 @@
 import { Montserrat } from "next/font/google";
 import "./globals.css";
-
 const montserrat = Montserrat({ subsets: ["latin"] });
 
-export const metadata = {
-    title: "Maksimal Coaching",
-    description:
-        "Maksimal Coaching, nå dine mål med sertifiserte personlige trenere online",
-};
+import Header from "./components/Header";
 
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
-            <body className={montserrat.className}>{children}</body>
+            <head>
+                <link rel="icon" href="/M-logo.png" sizes="any" />;
+            </head>
+            <body className={montserrat.className}>
+                <Header />
+                {children}
+            </body>
         </html>
     );
 }

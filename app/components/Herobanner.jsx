@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { ButtonGhost, ButtonPrimaryDark } from "../utilities/Buttons";
+import Link from "next/link";
 
 export default function Herobanner() {
     return (
@@ -24,7 +25,9 @@ export default function Herobanner() {
             </div>
             <div className="grid place-items-center gap-8">
                 <ButtonGhost>BOOK KONSULTASJON NÅ</ButtonGhost>
-                <ButtonPrimaryDark>FINN DIN COACH</ButtonPrimaryDark>
+                <Link href="/team">
+                    <ButtonPrimaryDark>FINN DIN COACH</ButtonPrimaryDark>
+                </Link>
             </div>
         </div>
     );

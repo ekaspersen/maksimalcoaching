@@ -1,6 +1,7 @@
 import ServicesIcons from "../utilities/ServicesIcons";
 import Image from "next/image";
 import { ButtonPrimary } from "../utilities/Buttons";
+import Link from "next/link";
 
 export default function TjenesterCta() {
     return (

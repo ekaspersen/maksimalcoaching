@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { ButtonPrimaryDark } from "../utilities/Buttons";
 
 function Header() {
@@ -12,11 +12,21 @@ function Header() {
         setMenuOpen(!menuOpen);
     };
 
+    const closeMenu = () => {
+        setMenuOpen(false);
+    };
+
+    const MenuLink = ({ href, children }) => (
+        <Link href={href} onClick={closeMenu}>
+            {children}
+        </Link>
+    );
+
     return (
         <>
-            <header className="inner py-4 bg-clr_black shadow-md shadow-clr_black flex items-center justify-between sticky text-white font-extrabold top-0 z-50">
+            <header className="inner py-4 bg-clr_black shadow-md shadow-clr_black flex items-center justify-between sticky text-white font-extrabold top-0 z-50 overflow-clip">
                 <div className="flex gap-4">
-                    <Link href="/">
+                    <MenuLink href="/">
                         <Image
                             width={56}
                             height={48}
@@ -24,69 +34,71 @@ function Header() {
                             alt="Maksimal Coaching logo"
                             className="w-9 h-8 md:w-14 md:h-12"
                         />
-                    </Link>
+                    </MenuLink>
                 </div>
                 {/* dropdown button */}
-                {!menuOpen && (
-                    <motion.div
-                        initial={{ opacity: 0, x: 0 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0 }}
-                        transition={{ delay: 0.2, duration: 0.4 }}
-                        className="md:hidden"
-                    >
-                        <Image
-                            width={32}
-                            height={24}
-                            src="/menu.svg"
-                            alt="Meny"
-                            className="cursor-pointer"
-                            aria-label="Toggle menu"
+                <AnimatePresence>
+                    {!menuOpen ? (
+                        <motion.div
+                            key="menu-icon"
+                            initial={{ opacity: 0, x: 0 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0 }}
+                            transition={{ delay: 0.2, duration: 0.4 }}
+                            className="md:hidden"
+                        >
+                            <Image
+                                width={32}
+                                height={24}
+                                src="/menu.svg"
+                                alt="Meny"
+                                className="cursor-pointer"
+                                aria-label="Toggle menu"
+                                onClick={toggleMenu}
+                            />
+                        </motion.div>
+                    ) : (
+                        <motion.div
+                            key="close-icon"
+                            initial={{ rotate: 45, opacity: 0, x: 0 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0 }}
+                            transition={{ delay: 0.2, duration: 0.4 }}
                             onClick={toggleMenu}
-                        />
-                    </motion.div>
-                )}
-
-                {menuOpen && (
-                    <motion.div
-                        initial={{ rotate: 45, opacity: 0, x: 0 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0 }}
-                        transition={{ delay: 0.2, duration: 0.4 }}
-                        onClick={toggleMenu}
-                        className="text-7xl font-light absolute right-0 px-4 py-4"
-                    >
-                        +
-                    </motion.div>
-                )}
-                {/* mobile menu */}
-
+                            className="text-7xl font-light absolute right-0 px-4 py-4 md:hidden"
+                        >
+                            +
+                        </motion.div>
+                    )}
+                </AnimatePresence>
                 {/* desktop menu */}
                 <nav className="hidden md:flex gap-4 items-center">
-                    <Link href="/team">FINN DIN COACH</Link>
-                    <Link href="/">KONTAKT</Link>
-                    <Link href="/">
+                    <MenuLink href="/team">FINN DIN COACH</MenuLink>
+                    <MenuLink href="/">KONTAKT</MenuLink>
+                    <MenuLink href="/">
                         <ButtonPrimaryDark>TJENESTER</ButtonPrimaryDark>
-                    </Link>
-                    <Link href="/">OM OSS</Link>
+                    </MenuLink>
+                    <MenuLink href="/">OM OSS</MenuLink>
                 </nav>
             </header>
-            {menuOpen && (
-                <motion.nav
-                    initial={{ opacity: 0, y: -20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -20 }}
-                    transition={{ duration: 0.4 }}
-                    className="flex md:hidden flex-col text-white font-extrabold bg-clr_black fixed top-0 bottom-32 left-0 right-0 mt-16 gap-8 text-lg items-center justify-center"
-                >
-                    <Link href="/team">FINN DIN COACH</Link>
-                    <Link href="/">KONTAKT</Link>
-                    <Link href="/">
-                        <ButtonPrimaryDark>TJENESTER</ButtonPrimaryDark>
-                    </Link>
-                    <Link href="/">OM OSS</Link>
-                </motion.nav>
-            )}
+            <AnimatePresence>
+                {menuOpen && (
+                    <motion.nav
+                        initial={{ opacity: 0, y: -20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -20 }}
+                        transition={{ duration: 0.4 }}
+                        className="flex md:hidden flex-col text-white font-extrabold bg-clr_black fixed top-0 bottom-32 left-0 right-0 mt-16 gap-8 text-lg items-center justify-center z-50"
+                    >
+                        <MenuLink href="/team">FINN DIN COACH</MenuLink>
+                        <MenuLink href="/">KONTAKT</MenuLink>
+                        <MenuLink href="/">
+                            <ButtonPrimaryDark>TJENESTER</ButtonPrimaryDark>
+                        </MenuLink>
+                        <MenuLink href="/">OM OSS</MenuLink>
+                    </motion.nav>
+                )}
+            </AnimatePresence>
         </>
     );
 }

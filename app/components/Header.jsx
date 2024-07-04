@@ -74,8 +74,8 @@ function Header() {
                 {/* desktop menu */}
                 <nav className="hidden md:flex gap-4 items-center">
                     <MenuLink href="/team">FINN DIN COACH</MenuLink>
-                    <MenuLink href="/">KONTAKT</MenuLink>
-                    <MenuLink href="/">
+                    <MenuLink href="/#PageFooter">KONTAKT</MenuLink>
+                    <MenuLink href="/tjenester">
                         <ButtonPrimaryDark>TJENESTER</ButtonPrimaryDark>
                     </MenuLink>
                     <MenuLink href="/">OM OSS</MenuLink>
@@ -91,8 +91,8 @@ function Header() {
                         className="flex md:hidden flex-col text-white font-extrabold bg-clr_black fixed top-0 bottom-32 left-0 right-0 mt-16 gap-8 text-lg items-center justify-center z-50"
                     >
                         <MenuLink href="/team">FINN DIN COACH</MenuLink>
-                        <MenuLink href="/">KONTAKT</MenuLink>
-                        <MenuLink href="/">
+                        <MenuLink href="/#PageFooter">KONTAKT</MenuLink>
+                        <MenuLink href="/tjenester">
                             <ButtonPrimaryDark>TJENESTER</ButtonPrimaryDark>
                         </MenuLink>
                         <MenuLink href="/">OM OSS</MenuLink>

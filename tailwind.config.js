@@ -7,9 +7,13 @@ module.exports = {
     ],
     theme: {
         extend: {
+            screens: {
+                xs: "440px",
+            },
             colors: {
                 clr_white: "#FFFFFF",
                 clr_black: "#1A1A1A",
+                clr_black20op: "rgb(26, 26, 26, 0.5)",
                 clr_gray: "#b0b0b0",
                 clr_primary: "#FF3131",
                 clr_primary_dark: "#AA0000",

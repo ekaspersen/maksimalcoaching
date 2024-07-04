@@ -114,7 +114,7 @@ export function CoachCard({ coach }) {
                 width={420}
                 height={420}
                 alt={`Bilde av ${coach.name}`}
-                className="aspect-square w-full object-cover object-center max-w-96 rounded-lg border-4 border-clr_gray"
+                className="aspect-square w-full object-cover object-center max-w-96 rounded-lg"
             />
             <h2 className="text-3xl font-bold italic">{coach.name}</h2>
             <div>
@@ -154,7 +154,8 @@ export default function Team() {
     return (
         <>
             <main>
-                <section className="inner relative min-h-[480px] lg:min-h-[700px]  flex items-end py-8 bg-[url('/womanlookingatman.jpg')] bg-cover bg-center lg:bg-auto bg-no-repeat lg:bg-right">
+                <section className="inner relative min-h-[480px] lg:min-h-[700px]  flex items-end py-8 ">
+                    <div className="absolute right-0 w-full max-w-[900px] top-0 bottom-0 bg-[url('/ina-spottes.PNG')] bg-cover bg-center"></div>
                     <div className="absolute inset-0 bg-gradient-to-b from-transparent to-clr_black"></div>
                     <h1 className="font-bold italic text-4xl flex flex-col z-10">
                         <span className="lg:text-5xl">Møt teamet vårt</span>
@@ -178,7 +179,7 @@ export default function Team() {
                         </Link>
                     </p>
                 </span>
-                <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 auto-rows-fr gap-4 lg:gap-8 inner pt-8">
+                <section className="grid grid-cols-1 md:grid-cols-2 auto-rows-fr gap-4 lg:gap-8 inner pt-8">
                     {coaches.map((coach) => (
                         <CoachCard key={coach.id} coach={coach} />
                     ))}

@@ -50,7 +50,9 @@ export default function TjenesterCta() {
                         </ul>
                     </div>
                     <div className="mt-auto flex flex-col items-center gap-2">
-                        <ButtonPrimary>Velg pakke</ButtonPrimary>
+                        <Link href="/tjenester/#kombinert">
+                            <ButtonPrimary>Mer info</ButtonPrimary>
+                        </Link>
                         <span className="text-sm font-light italic text-clr_gray">
                             Fra 2100kr
                         </span>
@@ -93,7 +95,9 @@ export default function TjenesterCta() {
                         </ul>
                     </div>
                     <div className="mt-auto flex flex-col items-center gap-2">
-                        <ButtonPrimary>Velg pakke</ButtonPrimary>
+                        <Link href="/tjenester/#trening">
+                            <ButtonPrimary>Mer info</ButtonPrimary>
+                        </Link>
                         <span className="text-sm font-light italic text-clr_gray">
                             Fra 1700kr
                         </span>
@@ -132,7 +136,10 @@ export default function TjenesterCta() {
                         </ul>
                     </div>
                     <div className="mt-auto flex flex-col items-center gap-2">
-                        <ButtonPrimary>Velg pakke</ButtonPrimary>
+                        <Link href="/tjenester/#kosthold">
+                            <ButtonPrimary>Mer info</ButtonPrimary>
+                        </Link>
+
                         <span className="text-sm font-light italic text-clr_gray">
                             Fra 1700kr
                         </span>

@@ -9,11 +9,13 @@
         "lint": "next lint"
     },
     "dependencies": {
+        "@stripe/stripe-js": "^4.1.0",
         "framer-motion": "^11.2.12",
         "next": "14.2.3",
         "react": "^18",
         "react-dom": "^18",
-        "sharp": "^0.33.4"
+        "sharp": "^0.33.4",
+        "stripe": "^16.2.0"
     },
     "devDependencies": {
         "eslint": "^8",

@@ -1,4 +1,6 @@
-import Image from "next/image";
+import { ButtonPrimary } from "../utilities/Buttons";
+import ServicesIcons from "../utilities/ServicesIcons";
+import Link from "next/link";
 
 export const metadata = {
     title: "Maksimal Coaching | Våre tjenester",
@@ -7,6 +9,7 @@ export const metadata = {
 };
 
 export function ServiceInfo({
+    id,
     title,
     description,
     children,
@@ -15,7 +18,10 @@ export function ServiceInfo({
     seksMndBinding,
 }) {
     return (
-        <div className="flex flex-col lg:flex-row py-16 md:py-24 gap-8 inner">
+        <div
+            id={id}
+            className="flex flex-col lg:flex-row py-16 my-16 gap-8 inner bg-clr_primary_dark bg-opacity-5 lg:items-center"
+        >
             <div className="flex flex-col gap-8 md:flex-1">
                 <div className="flex flex-col gap-4">
                     <h2 className="font-black italic text-3xl">{title}</h2>
@@ -32,7 +38,7 @@ export function ServiceInfo({
                     </ul>
                 </div>
             </div>
-            <div className="flex flex-col w-full flex-1 gap-8">
+            <div className="flex flex-col w-full flex-1 gap-8 max-w-2xl">
                 <div className="flex flex-col bg-clr_primary_dark px-4 py-8 bg-opacity-50 h-fit">
                     <span className="font-black italic text-3xl pb-4 ">
                         Priser
@@ -61,7 +67,22 @@ export function ServiceInfo({
                         </span>
                     </div>
                 </div>
-                Button comes here
+                <div className="flex flex-col gap-4 flex-1">
+                    <p className="max-w-sm font-bold text-clr_gray mb-[-16px]">
+                        Usikker hvem du vil ha som coach?
+                    </p>
+                    <Link
+                        className="border-b-2 italic font-bold border-white w-fit"
+                        href="/team"
+                    >
+                        Se teamet vårt
+                    </Link>
+                    <p className=" max-w-md font-bold text-clr_gray">
+                        Du velger coach og pakke i påmeldingsskjema før du går
+                        videre til betaling.
+                    </p>
+                    <ButtonPrimary>Bestill Coaching nå</ButtonPrimary>
+                </div>
             </div>
         </div>
     );
@@ -80,24 +101,30 @@ export default function page() {
                     </span>
                 </h1>
             </section>
+
             <ServiceInfo
+                id="kombinert"
                 utenBinding="2500"
                 treMndBinding="2300"
                 seksMndBinding="2100"
                 title="Kombinert oppfølging"
-                description="Få skreddersydde kostholds- og treningsplaner, med ukentlige justeringer og personlig støtte fra din coach. Oppnå dine mål med en personlig tilnærming og oppfølging."
+                description="Skreddersydde kostholds- og treningsplaner, med ukentlige justeringer og personlig støtte fra din coach. Oppnå dine mål med en personlig tilnærming og oppfølging."
             >
                 <li>Alt som inkluderes i kostholds- og treningsoppfølging</li>
                 <li>Ukentlig check-in med tilpassinger</li>
                 <li>Skreddersydd opplegg akkurat for deg</li>
                 <li>Helhetlig tilnærming til dine mål og bedre helse</li>
             </ServiceInfo>
+            <div className="inner">
+                <ServicesIcons />
+            </div>
             <ServiceInfo
+                id="trening"
                 utenBinding="2000"
                 treMndBinding="1850"
                 seksMndBinding="1700"
-                title="Treningsoppfølging"
-                description="Få et treningsopplegg som passer perfekt til dine
+                title="Trenings oppfølging"
+                description="Treningsopplegg som passer perfekt til dine
                             mål, med ukentlige check-ins og tilpassninger for å
                             sikre din fremgang."
             >
@@ -106,26 +133,25 @@ export default function page() {
                 <li>Ukentlig check-in med ukesrapport</li>
                 <li>Tracking av fremgang</li>
                 <li>Chat med din coach daglig</li>
-                <li>Dokumenter og videoer hvor du kan lære mer om trening</li>
                 <li>Justering av treningsprogram underveis</li>
                 <li>Hjelp med teknikk</li>
             </ServiceInfo>
+            <div className="inner">
+                <ServicesIcons />
+            </div>
             <ServiceInfo
+                id="kosthold"
                 utenBinding="2000"
                 treMndBinding="1850"
                 seksMndBinding="1700"
-                title="Kostholdsoppfølging"
-                description="Få skreddersydde kostholdsplaner og sunne
+                title="Kostholds oppfølging"
+                description="Skreddersydde kostholdsplaner og sunne
                             oppskrifter som passer dine mål, med ukentlige
                             justeringer og grundig oppfølging."
             >
                 <li>Skreddersydd kostholdsplan for dine mål</li>
                 <li>Ukentlige justeringer</li>
                 <li>Sunne og næringsrike oppskrifter</li>
-                <li>
-                    Tilgang til lærerike kilder om kosthold så du kan lære mer
-                    selv
-                </li>
             </ServiceInfo>
         </main>
     );

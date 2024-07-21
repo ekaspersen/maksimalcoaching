@@ -1,8 +1,9 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export function FooterTitle({ children }) {
     return (
-        <h3 className="font-black text-xl sm:text-2xl  italic text-clr_primary">
+        <h3 className="font-black text-xl sm:text-2xl  italic text-clr_white">
             {children}
         </h3>
     );
@@ -23,14 +24,6 @@ export default function Footer() {
     return (
         <footer id="PageFooter" className="bg-clr_black">
             <section className="inner flex flex-col xs:flex-row justify-between py-8 md:py-16 gap-8 md:gap-16 text-base sm:text-lg">
-                <div className="flex flex-col gap-4 w-fit">
-                    <FooterTitle>Naviger</FooterTitle> <hr />
-                    <FooterLink href="/">Hjem</FooterLink>
-                    <FooterLink href="/team">Finn din coach</FooterLink>
-                    <FooterLink href="/#PageFooter">Kontakt</FooterLink>
-                    <FooterLink href="/">Tjenester</FooterLink>
-                    <FooterLink href="/">Om oss</FooterLink>
-                </div>
                 <div className="flex flex-col gap-8 w-fit">
                     <div className="flex flex-col gap-4">
                         <FooterTitle>Sosiale Medier</FooterTitle> <hr />
@@ -48,11 +41,28 @@ export default function Footer() {
                             post@maksimalcoaching.no
                         </p>
                         <p className="font-black italic text-base sm:text-lg">
-                            Tlf: +47 90 40 66 77
+                            Tlf +47 919 99 449
                         </p>
                     </div>
                 </div>
+                <div className="flex flex-col gap-4 w-fit">
+                    <FooterTitle>Naviger</FooterTitle> <hr />
+                    <FooterLink href="/">Hjem</FooterLink>
+                    <FooterLink href="/team">Finn din coach</FooterLink>
+                    <FooterLink href="/#PageFooter">Kontakt</FooterLink>
+                    <FooterLink href="/tjenester">Tjenester</FooterLink>
+                    <FooterLink href="/">Om oss</FooterLink>
+                </div>
             </section>
+            <div className="pb-8 inner">
+                <Image
+                    className="max-w-full"
+                    src="/logo-maksimal-left.png"
+                    width={300}
+                    height={76}
+                    alt="Maksimal Coaching logo"
+                />
+            </div>
         </footer>
     );
 }

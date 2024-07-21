@@ -15,7 +15,6 @@ export const coaches = [
         id: 1,
         name: "Markus Råheim",
         image: "/markusRaheim.jpg",
-        specialty: "Strength Training",
         specialties:
             "Trening for muskelvekst, Maksimal styrke, Kosthold og vektnedgang",
         experiences: [
@@ -35,7 +34,6 @@ export const coaches = [
         id: 2,
         name: "Ina Kolstad Rustad",
         image: "/ina-on.jpg",
-        specialty: "Strength Training",
         specialties:
             "Trening for muskelvekst, Trening for økt styrke og Kosthold",
         experiences: [
@@ -57,7 +55,6 @@ export const coaches = [
         id: 3,
         name: "Anders Felipe",
         image: "/andersSeated.jpg",
-        specialty: "Strength Training",
         specialties:
             "Trening for muskelvekst, Trening for vektnedgang, Motivasjon",
         experiences: ["Personlig trener - AFPT", "Coaching - AFPT"],
@@ -70,11 +67,28 @@ export const coaches = [
         tjeneste3: "kostholdsoppfølging",
     },
     {
-        // Gro Eli
+        // Mathias Abrahamsen
         id: 4,
+        name: "Mathias Abrahamsen",
+        image: "/mathias.png",
+        specialties: "Fitness, Trening for muskelvekst, Kosthold",
+        experiences: [
+            "Sertifisert Personlig trener - Active Education",
+            "Kostholdsveileder - Active Education",
+        ],
+        about: "Med Mathias som coach får du ikke bare en plan og instrukser om hva du skal gjøre. Du får også en engasjert støttespiller som jobber beinhardt for at du skal nå målene dine. I et samarbeid med Mathias vil du ikke bare nå målene dine, du vil også lære mye på veien. Mathias er opptatt av at hans kunder skal lære og forstå hele prosessen, og hvorfor vi gjør som vi gjør.",
+        email: "mathias.abrahamsen@maksimalcoaching.no",
+        instagram: "https://www.instagram.com/mathiasabra/",
+        instagramAt: "mathiasabra",
+        tjeneste1: "Kombinert oppfølging",
+        tjeneste2: "treningsoppfølging",
+        tjeneste3: "kostholdsoppfølging",
+    },
+    {
+        // Gro Eli
+        id: 5,
         name: "Gro Eli",
         image: "/groeli_preshoot.jpg",
-        specialty: "Strength Training",
         specialties:
             "Trening før, under og etter graviditet, Trening for muskelvekst og bedre helse, Kosthold, rehabilitering",
         experiences: [
@@ -90,6 +104,30 @@ export const coaches = [
         tjeneste2: "Treningsoppfølging",
         tjeneste3: "Kostholdsoppfølging",
     },
+    {
+        // Lena Prestmarken
+        id: 6,
+        name: "Lena Prestmarken",
+        image: "/lenaprestmark.PNG",
+        specialties:
+            "Trening før, under og etter graviditet, Trening for muskelvekst og bedre helse, Kosthold, rehabilitering",
+        experiences: [
+            "Personlig trener, Safe Education",
+            "Instruktør gruppetrening, Safe Education",
+            "Health and lifestyle, Sats Academy",
+            "Rehab/prehab, Sats Academy",
+            "Kostholdsveileder, Sats Academy",
+            "Coaching, Sats Academy",
+            "Trening under og etter svangerskap, Sats Academy",
+        ],
+        about: "Lena er en av våre mest erfarne personlige trenere. Hun har jobbet som personlig trener og gruppetreningsinstruktør fulltid i 10 år. Gjennom årene har hun anskaffet seg bred erfaring og kunnskap innen trening og helse, og har et helhetlig syn på dette. Lena har god kompetanse innen vektnedgang, trening under og etter svangerskap, rehabilitering og generell styrketrening. ",
+        email: "lena.prestmarken@maksimalcoaching.no",
+        instagram: "https://www.instagram.com/lenaprestmarken/",
+        instagramAt: "lenaprestmarken",
+        tjeneste1: "Kombinert oppfølging",
+        tjeneste2: "Treningsoppfølging",
+        tjeneste3: "Kostholdsoppfølging",
+    },
 ];
 export function CoachCard({ coach }) {
     return (
@@ -99,72 +137,63 @@ export function CoachCard({ coach }) {
                 width={420}
                 height={420}
                 alt={`Bilde av ${coach.name}`}
-                className="aspect-square w-full object-cover object-center max-w-96 rounded-lg"
+                className="aspect-square w-full object-cover object-center border-2 max-w-96 rounded-lg"
             />
             <h2 className="text-3xl font-bold italic">{coach.name}</h2>
-            <div>
-                <span className="italic font-bold text-lg text-clr_primary_dark">
-                    Styrker
-                </span>
-                <h3 className="font-medium italic text-xl">
-                    {coach.specialties}
-                </h3>
-            </div>
-            <ul className="italic text-sm lg:text-base">
-                <span className="italic font-bold text-lg text-clr_primary_dark">
-                    Utdannelser og kurs
-                </span>
-                {coach.experiences.map((exp, index) => (
-                    <li className="ml-4 lg:ml-8" key={index}>
-                        {exp}
+            <div className="flex flex-col gap-6 border-l-2 pl-4">
+                <div>
+                    <span className="italic font-bold text-lg text-clr_primary_dark">
+                        Styrker
+                    </span>
+                    <h3 className="font-medium italic text-xl">
+                        {coach.specialties}
+                    </h3>
+                </div>
+                <p className="font-light max-w-xl">{coach.about}</p>
+
+                <ul className="italic text-sm lg:text-base">
+                    <span className="italic font-bold text-lg text-clr_primary_dark">
+                        Utdannelser og kurs
+                    </span>
+                    {coach.experiences.map((exp, index) => (
+                        <li className="ml-4 lg:ml-8" key={index}>
+                            {exp}
+                        </li>
+                    ))}
+                </ul>
+                <ul className="flex flex-col gap-1">
+                    <span className="italic font-bold text-lg text-clr_primary_dark">
+                        Tjenester jeg tilbyr
+                    </span>
+                    <li className="ml-4 lg:ml-8 text-sm lg:text-base italic">
+                        {coach.tjeneste1}
                     </li>
-                ))}
-            </ul>
-            <p className="italic text-sm max-w-xl">{coach.about}</p>
-            <ul className="flex flex-col gap-1">
-                <span className="italic font-bold text-lg text-clr_primary">
-                    Tjenester jeg tilbyr
-                </span>
-                <li className="ml-4 lg:ml-8 text-sm lg:text-base italic">
-                    {coach.tjeneste1}
-                </li>
-                <li className="ml-4 lg:ml-8 text-sm lg:text-base italic">
-                    {coach.tjeneste2}
-                </li>
-                <li className="ml-4 lg:ml-8 text-sm lg:text-base italic">
-                    {coach.tjeneste3}
-                </li>
-            </ul>
-            <ButtonPrimary>Bestill Coaching</ButtonPrimary>
-            <div className="flex flex-col">
-                <p className="max-w-sm font-bold text-clr_gray">
-                    Les mer om priser og tjenester
-                </p>
+                    <li className="ml-4 lg:ml-8 text-sm lg:text-base italic">
+                        {coach.tjeneste2}
+                    </li>
+                    <li className="ml-4 lg:ml-8 text-sm lg:text-base italic">
+                        {coach.tjeneste3}
+                    </li>
+                </ul>
+                <ButtonPrimary>Bestill Coaching</ButtonPrimary>
                 <Link
                     className="border-b-2 italic font-bold border-white w-fit"
                     href="/tjenester"
                 >
-                    Ta meg dit
+                    Les mer om priser og tjenester
                 </Link>
-            </div>
-            <div className="flex flex-col gap-1">
-                <span className="italic font-bold text-lg text-clr_gray">
-                    Kontakt meg
-                </span>
-                <span className="text-sm font-semibold italic text-clr_gray">
-                    e-post: {coach.email}
-                </span>
-                <span className="text-sm font-semibold italic text-clr_gray">
-                    Instagram: @
-                    <a
-                        className="underline hover:text-white transition-colors ease-in"
+                <div className="flex flex-col">
+                    <span className="italic font-bold text-lg text-clr_gray">
+                        Instagram
+                    </span>
+
+                    <span
+                        className="text-sm font-semibold italic text-clr_gray mt-[-4px]"
                         target="blank"
-                        href={coach.instagram}
                     >
-                        {coach.instagramAt}
-                    </a>
-                    <span className="text-[8px]"> Se instagram</span>
-                </span>
+                        @{coach.instagramAt}
+                    </span>
+                </div>
             </div>
         </div>
     );
@@ -173,8 +202,8 @@ export default function Team() {
     return (
         <>
             <main>
-                <section className="inner relative min-h-[480px] lg:min-h-[700px]  flex items-end py-8 ">
-                    <div className="absolute right-0 w-full max-w-[900px] top-0 bottom-0 bg-[url('/ina-spottes.PNG')] bg-cover bg-center"></div>
+                <section className="inner relative min-h-[480px] lg:min-h-[600px]  flex items-end py-8 ">
+                    <div className="absolute right-0 w-full  xl:max-w-[900px] top-0 bottom-0 bg-[url('/ina-spottes.PNG')] bg-cover bg-center"></div>
                     <div className="absolute inset-0 bg-gradient-to-b from-transparent to-clr_black"></div>
                     <h1 className="font-bold italic text-4xl flex flex-col z-10">
                         <span className="lg:text-5xl">Møt teamet vårt</span>

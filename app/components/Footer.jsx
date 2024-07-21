@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export function FooterTitle({ children }) {
     return (
-        <h3 className="font-black text-xl sm:text-2xl  italic text-clr_primary">
+        <h3 className="font-black text-xl sm:text-2xl  italic text-clr_white">
             {children}
         </h3>
     );

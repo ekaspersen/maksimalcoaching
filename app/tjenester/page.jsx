@@ -1,5 +1,4 @@
-import Image from "next/image";
-import { ButtonGhost, ButtonPrimary } from "../utilities/Buttons";
+import { ButtonPrimary } from "../utilities/Buttons";
 import ServicesIcons from "../utilities/ServicesIcons";
 import Link from "next/link";
 

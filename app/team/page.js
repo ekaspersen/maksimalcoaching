@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ButtonGhost, ButtonPrimary } from "../utilities/Buttons";
+import { ButtonPrimary } from "../utilities/Buttons";
 
 export const metadata = {
     title: "Maksimal Coaching | Finn din coach",
@@ -26,8 +26,8 @@ export const coaches = [
         instagram: "https://www.instagram.com/markusraaheim/",
         instagramAt: "markusraaheim",
         tjeneste1: "Kombinert oppfølging",
-        tjeneste2: "treningsoppfølging",
-        tjeneste3: "kostholdsoppfølging",
+        tjeneste2: "Treningsoppfølging",
+        tjeneste3: "Kostholdsoppfølging",
     },
     {
         // Ina Kolstad Rustad
@@ -47,8 +47,8 @@ export const coaches = [
         instagram: "https://www.instagram.com/inasuper/",
         instagramAt: "inasuper",
         tjeneste1: "Kombinert oppfølging",
-        tjeneste2: "treningsoppfølging",
-        tjeneste3: "kostholdsoppfølging",
+        tjeneste2: "Treningsoppfølging",
+        tjeneste3: "Kostholdsoppfølging",
     },
     {
         // Anders Felipe
@@ -62,9 +62,7 @@ export const coaches = [
         email: "anders.felipe@maksimalcoaching.no",
         instagram: "https://www.instagram.com/felipejrjr/",
         instagramAt: "felipejrjr",
-        tjeneste1: "Kombinert oppfølging",
-        tjeneste2: "treningsoppfølging",
-        tjeneste3: "kostholdsoppfølging",
+        tjeneste2: "Treningsoppfølging",
     },
     {
         // Mathias Abrahamsen
@@ -155,27 +153,40 @@ export function CoachCard({ coach }) {
                     <span className="italic font-bold text-lg text-clr_primary_dark">
                         Utdannelser og kurs
                     </span>
-                    {coach.experiences.map((exp, index) => (
-                        <li className="ml-4 lg:ml-8" key={index}>
-                            {exp}
-                        </li>
-                    ))}
+                    {coach.experiences.map(
+                        (exp, index) =>
+                            exp && (
+                                <li className="ml-4 lg:ml-8" key={index}>
+                                    {exp}
+                                </li>
+                            )
+                    )}
                 </ul>
                 <ul className="flex flex-col gap-1">
                     <span className="italic font-bold text-lg text-clr_primary_dark">
                         Tjenester jeg tilbyr
                     </span>
-                    <li className="ml-4 lg:ml-8 text-sm lg:text-base italic">
-                        {coach.tjeneste1}
-                    </li>
-                    <li className="ml-4 lg:ml-8 text-sm lg:text-base italic">
-                        {coach.tjeneste2}
-                    </li>
-                    <li className="ml-4 lg:ml-8 text-sm lg:text-base italic">
-                        {coach.tjeneste3}
-                    </li>
+                    {coach.tjeneste1 && (
+                        <li className="ml-4 lg:ml-8 text-sm lg:text-base italic">
+                            {coach.tjeneste1}
+                        </li>
+                    )}
+                    {coach.tjeneste2 && (
+                        <li className="ml-4 lg:ml-8 text-sm lg:text-base italic">
+                            {coach.tjeneste2}
+                        </li>
+                    )}
+                    {coach.tjeneste3 && (
+                        <li className="ml-4 lg:ml-8 text-sm lg:text-base italic">
+                            {coach.tjeneste3}
+                        </li>
+                    )}
                 </ul>
-                <ButtonPrimary>Bestill Coaching</ButtonPrimary>
+                <Link href="/checkout">
+                    {" "}
+                    <ButtonPrimary>Bestill Coaching</ButtonPrimary>
+                </Link>
+
                 <Link
                     className="border-b-2 italic font-bold border-white w-fit"
                     href="/tjenester"
@@ -203,8 +214,8 @@ export default function Team() {
         <>
             <main>
                 <section className="inner relative min-h-[480px] lg:min-h-[600px]  flex items-end py-8 ">
-                    <div className="absolute right-0 w-full  xl:max-w-[900px] top-0 bottom-0 bg-[url('/ina-spottes.PNG')] bg-cover bg-center"></div>
-                    <div className="absolute inset-0 bg-gradient-to-b from-transparent to-clr_black"></div>
+                    <div className="absolute right-0 w-full  lg:max-w-[900px] top-0 bottom-0 bg-[url('/ina-spottes.PNG')] bg-cover bg-center"></div>
+                    <div className="absolute inset-0 bg-gradient-to-b lg:h-3/4 lg:mt-auto from-transparent to-clr_black"></div>
                     <h1 className="font-bold italic text-4xl flex flex-col z-10">
                         <span className="lg:text-5xl">Møt teamet vårt</span>
                         <span className="text-base lg:text-2xl">

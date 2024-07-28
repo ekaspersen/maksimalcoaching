@@ -24,7 +24,7 @@ function Header() {
 
     return (
         <>
-            <header className="inner py-4 bg-clr_black shadow-md shadow-clr_black flex items-center justify-between sticky text-white font-extrabold top-0 z-50 overflow-clip">
+            <header className="inner py-4 bg-clr_black  flex items-center justify-between sticky text-white font-extrabold top-0 z-50 overflow-clip">
                 <div className="flex gap-4">
                     <MenuLink href="/">
                         <Image
@@ -65,7 +65,7 @@ function Header() {
                             exit={{ opacity: 0 }}
                             transition={{ delay: 0.2, duration: 0.4 }}
                             onClick={toggleMenu}
-                            className="text-7xl font-light absolute right-0 px-4 py-4 md:hidden"
+                            className="text-7xl font-light absolute right-0 px-4 py-4 md:hidden cursor-pointer"
                         >
                             +
                         </motion.div>
@@ -73,12 +73,12 @@ function Header() {
                 </AnimatePresence>
                 {/* desktop menu */}
                 <nav className="hidden md:flex gap-4 items-center">
-                    <MenuLink href="/team">FINN DIN COACH</MenuLink>
+                    <MenuLink href="/omoss">OM OSS</MenuLink>
                     <MenuLink href="/#PageFooter">KONTAKT</MenuLink>
                     <MenuLink href="/tjenester">
-                        <ButtonPrimaryDark>TJENESTER</ButtonPrimaryDark>
+                        <ButtonPrimaryDark>BESTILL COACHING</ButtonPrimaryDark>
                     </MenuLink>
-                    <MenuLink href="/">OM OSS</MenuLink>
+                    <MenuLink href="/team">FINN COACH</MenuLink>
                 </nav>
             </header>
             <AnimatePresence>
@@ -90,12 +90,14 @@ function Header() {
                         transition={{ duration: 0.4 }}
                         className="flex md:hidden flex-col text-white font-extrabold bg-clr_black fixed top-0 bottom-32 left-0 right-0 mt-16 gap-8 text-lg items-center justify-center z-50"
                     >
-                        <MenuLink href="/team">FINN DIN COACH</MenuLink>
-                        <MenuLink href="/#PageFooter">KONTAKT</MenuLink>
+                        <MenuLink href="/team">FINN COACH</MenuLink>
                         <MenuLink href="/tjenester">
-                            <ButtonPrimaryDark>TJENESTER</ButtonPrimaryDark>
+                            <ButtonPrimaryDark>
+                                BESTILL COACHING
+                            </ButtonPrimaryDark>
                         </MenuLink>
-                        <MenuLink href="/">OM OSS</MenuLink>
+                        <MenuLink href="/#PageFooter">KONTAKT</MenuLink>
+                        <MenuLink href="/omoss">OM OSS</MenuLink>
                     </motion.nav>
                 )}
             </AnimatePresence>

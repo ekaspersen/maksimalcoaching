@@ -81,7 +81,9 @@ export function ServiceInfo({
                         Du velger coach og pakke i påmeldingsskjema før du går
                         videre til betaling.
                     </p>
-                    <ButtonPrimary>Bestill Coaching nå</ButtonPrimary>
+                    <Link href="/checkout">
+                        <ButtonPrimary>Bestill Coaching nå</ButtonPrimary>
+                    </Link>
                 </div>
             </div>
         </div>

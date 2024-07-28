@@ -7,11 +7,11 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
 
 export async function POST(request) {
     try {
-        const { priceId } = await request.json();
+        const { priceId, coachId, customerComment } = await request.json();
 
-        if (!priceId) {
+        if (!priceId || !coachId) {
             return NextResponse.json(
-                { error: "Price ID is required" },
+                { error: "Price ID and Coach ID are required" },
                 { status: 400 }
             );
         }
@@ -27,6 +27,10 @@ export async function POST(request) {
             ],
             success_url: `${process.env.NEXT_PUBLIC_BASE_URL}/success?session_id={CHECKOUT_SESSION_ID}`,
             cancel_url: `${process.env.NEXT_PUBLIC_BASE_URL}/cancel`,
+            metadata: {
+                coachId: coachId,
+                customerComment: customerComment,
+            },
         });
 
         return NextResponse.json({ sessionId: session.id });

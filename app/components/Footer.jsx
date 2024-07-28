@@ -1,5 +1,7 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import ToS from "./ToS";
 
 export function FooterTitle({ children }) {
     return (
@@ -13,7 +15,7 @@ export function FooterLink({ href, children }) {
     return (
         <Link
             href={href}
-            className="font-black w-fit italic hover:text-clr_primary hover:skew-x-12 transition-all duration-300 ease-in-out"
+            className="font-black border-b-2 hover:border-clr_primary  w-fit italic hover:text-clr_white text-clr_primary hover:skew-x-12 transition-all duration-300 ease-in-out"
         >
             {children}
         </Link>
@@ -29,7 +31,7 @@ export default function Footer() {
                         <FooterTitle>Sosiale Medier</FooterTitle> <hr />
                         <a
                             target="blank"
-                            className="font-black w-fit italic hover:text-clr_primary hover:skew-x-12 transition-all duration-300 ease-in-out"
+                            className="font-black border-b-2 hover:border-clr_primary  w-fit italic hover:text-clr_white text-clr_primary hover:skew-x-12 transition-all duration-300 ease-in-out"
                             href="https://www.instagram.com/maksimalcoaching/"
                         >
                             Instagram
@@ -51,9 +53,12 @@ export default function Footer() {
                     <FooterLink href="/team">Finn din coach</FooterLink>
                     <FooterLink href="/#PageFooter">Kontakt</FooterLink>
                     <FooterLink href="/tjenester">Tjenester</FooterLink>
-                    <FooterLink href="/">Om oss</FooterLink>
+                    <FooterLink href="/omoss">Om oss</FooterLink>
                 </div>
             </section>
+            <div className="inner pb-8">
+                <ToS />
+            </div>
             <div className="pb-8 inner">
                 <Image
                     className="max-w-full"

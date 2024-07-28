@@ -13,7 +13,7 @@ export default function Herobanner() {
                 className="absolute z-0 w-auto min-w-full min-h-full object-cover"
             >
                 <source
-                    src="/HeroVideo.mp4"
+                    src="/HeroVideo-small.webm"
                     type="video/webm"
                     media="(max-width: 720px)"
                 />

@@ -21,7 +21,7 @@ export const coaches = [
             "Personlig trener - AFPT",
             "10 års erfaring som styrketrening",
         ],
-        about: "Markus Råheim er din guide til varige endringer i livsstilen. Med en personlig vektnedgang på 40 kg og over ti års erfaring i trening, tilbyr han ekspertise innen kostholdsveiledning, styrketrening og hypertrofi. La Markus hjelpe deg med å finne treningsformer som motiverer og engasjerer deg, enten det er på treningsstudioet eller utendørs.",
+        about: "Markus er en kunnskapsrik og dyktig coach. Han er PT og fagansvarlig for Maksimal Coaching og jobber til daglig som personlig trener på Sats Vinderen, hvor han på bare en halv mnd ble fullbooket som PT! Markus har over 10 års erfaring med styrketrening og har vært gjennom en livsstilsendring hvor han gikk ned over 40kg og fikk mer muskelmasse. Spesialfeltet til Markus er trening for muskelvekst og økt maksimal styrke, så om du ønsker mer muskler eller vil bli sterk som en bjørn, er dette coachen for deg. Han lytter til kundene sine, og tilpasser treningen til deg og dine behov. Markus tar på seg alle typer kunder og brenner for å hjelpe akkurat deg mot dine mål! ",
         email: "markusraheim@maksimalcoaching.no",
         instagram: "https://www.instagram.com/markusraaheim/",
         instagramAt: "markusraaheim",

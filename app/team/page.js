@@ -14,7 +14,7 @@ export const coaches = [
         // Markus Råheim
         id: 1,
         name: "Markus Råheim",
-        image: "/markusRaheim.jpg",
+        image: "/hello-markus.jpg",
         specialties:
             "Trening for muskelvekst, Maksimal styrke, Kosthold og vektnedgang",
         experiences: [
@@ -33,7 +33,7 @@ export const coaches = [
         // Ina Kolstad Rustad
         id: 2,
         name: "Ina Kolstad Rustad",
-        image: "/ina-on.jpg",
+        image: "/hello-ina.jpg",
         specialties:
             "Trening for muskelvekst, Trening for økt styrke og Kosthold",
         experiences: [
@@ -54,7 +54,7 @@ export const coaches = [
         // Anders Felipe
         id: 3,
         name: "Anders Felipe",
-        image: "/andersSeated.jpg",
+        image: "/hello-anders.jpg",
         specialties:
             "Trening for muskelvekst, Trening for vektnedgang, Motivasjon",
         experiences: ["Personlig trener - AFPT", "Coaching - AFPT"],
@@ -68,7 +68,7 @@ export const coaches = [
         // Mathias Abrahamsen
         id: 4,
         name: "Mathias Abrahamsen",
-        image: "/mathias.png",
+        image: "/hello-mathias.jpg",
         specialties: "Fitness, Trening for muskelvekst, Kosthold",
         experiences: [
             "Sertifisert Personlig trener - Active Education",
@@ -86,7 +86,7 @@ export const coaches = [
         // Gro Eli
         id: 5,
         name: "Gro Eli",
-        image: "/groeli_preshoot.jpg",
+        image: "/hello-groeli.jpg",
         specialties:
             "Trening før, under og etter graviditet, Trening for muskelvekst og bedre helse, Kosthold, rehabilitering",
         experiences: [
@@ -106,7 +106,7 @@ export const coaches = [
         // Lena Prestmarken
         id: 6,
         name: "Lena Prestmarken",
-        image: "/lenaprestmark.PNG",
+        image: "/hello-lena.jpg",
         specialties:
             "Trening før, under og etter graviditet, Trening for muskelvekst og bedre helse, Kosthold, rehabilitering",
         experiences: [
@@ -130,7 +130,7 @@ export const coaches = [
         // Lena Prestmarken
         id: 7,
         name: "Eskil Kaspersen Hagen",
-        image: "/lenaprestmark.PNG",
+        image: "/hello-eskil.jpg",
         specialties: "Trening for muskelvekst, Styrketrening og Vektnedgang",
         experiences: [
             "Personlig trener, Active Education",

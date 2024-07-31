@@ -11,7 +11,7 @@ const priceData = {
         bindings: {
             uten: {
                 name: "Uten binding",
-                priceId: "price_1PibmrRsF5Uw8CjuHYf6fX4Z",
+                priceId: "price_1PieMdRsF5Uw8CjuwgnDdh4D",
             },
             "3mnd": {
                 name: "3 mnd binding",
@@ -61,9 +61,9 @@ const priceData = {
 
 const coaches = [
     {
-        id: "marrah1",
+        id: "#MarkusRåheim",
         name: "Markus Råheim",
-        imageUrl: "/markusRaheim.jpg",
+        imageUrl: "/hello-markus.jpg",
         services: {
             trening: true,
             kosthold: true,
@@ -71,9 +71,9 @@ const coaches = [
         },
     },
     {
-        id: "inarus2",
+        id: "#InaKolstadRustad",
         name: "Ina Kolstad Rustad",
-        imageUrl: "/ina-on.JPG",
+        imageUrl: "/hello-ina.jpg",
         services: {
             trening: true,
             kosthold: true,
@@ -81,9 +81,9 @@ const coaches = [
         },
     },
     {
-        id: "andfel3",
+        id: "#AndersFelipe",
         name: "Anders Felipe",
-        imageUrl: "/andersSeated.jpg",
+        imageUrl: "/hello-anders.jpg",
         services: {
             trening: true,
             kosthold: false,
@@ -91,9 +91,9 @@ const coaches = [
         },
     },
     {
-        id: "matabr4",
+        id: "#MathiasAbrahamsen",
         name: "Mathias Abrahamsen",
-        imageUrl: "/mathias.png",
+        imageUrl: "/hello-mathias.jpg",
         services: {
             trening: true,
             kosthold: true,
@@ -101,9 +101,9 @@ const coaches = [
         },
     },
     {
-        id: "groeli5",
+        id: "#GroEli",
         name: "Gro Eli",
-        imageUrl: "/groeli_preshoot.jpg",
+        imageUrl: "/hello-groeli.jpg",
         services: {
             trening: true,
             kosthold: true,
@@ -111,9 +111,9 @@ const coaches = [
         },
     },
     {
-        id: "lenpre6",
+        id: "#LenaPrestmarken",
         name: "Lena Prestmarken",
-        imageUrl: "/lenaprestmark.PNG",
+        imageUrl: "/hello-lena.jpg",
         services: {
             trening: true,
             kosthold: true,
@@ -121,9 +121,9 @@ const coaches = [
         },
     },
     {
-        id: "eskkas7",
+        id: "#EskilKaspersen",
         name: "Eskil Kaspersen",
-        imageUrl: "/lenaprestmark.PNG",
+        imageUrl: "/hello-eskil.jpg",
         services: {
             trening: true,
             kosthold: true,

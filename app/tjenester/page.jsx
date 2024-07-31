@@ -20,7 +20,7 @@ export function ServiceInfo({
     return (
         <div
             id={id}
-            className="flex flex-col lg:flex-row py-16 my-16 gap-8 inner bg-clr_primary_dark bg-opacity-5 lg:items-center"
+            className="flex flex-col lg:flex-row py-16 gap-8 w-full inner bg-clr_primary_dark bg-opacity-5 lg:items-center"
         >
             <div className="flex flex-col gap-8 md:flex-1">
                 <div className="flex flex-col gap-4">
@@ -103,58 +103,61 @@ export default function page() {
                     </span>
                 </h1>
             </section>
-
-            <ServiceInfo
-                id="kombinert"
-                utenBinding="2500"
-                treMndBinding="2300"
-                seksMndBinding="2100"
-                title="Kombinert oppfølging"
-                description="Skreddersydde kostholds- og treningsplaner, med ukentlige justeringer og personlig støtte fra din coach. Oppnå dine mål med en personlig tilnærming og oppfølging."
-            >
-                <li>Alt som inkluderes i kostholds- og treningsoppfølging</li>
-                <li>Ukentlig check-in med tilpassinger</li>
-                <li>Skreddersydd opplegg akkurat for deg</li>
-                <li>Helhetlig tilnærming til dine mål og bedre helse</li>
-            </ServiceInfo>
-            <div className="inner">
-                <ServicesIcons />
-            </div>
-            <ServiceInfo
-                id="trening"
-                utenBinding="2000"
-                treMndBinding="1850"
-                seksMndBinding="1700"
-                title="Trenings oppfølging"
-                description="Treningsopplegg som passer perfekt til dine
+            <div className="flex flex-col gap-8 w-full">
+                <ServiceInfo
+                    id="kombinert"
+                    utenBinding="2500"
+                    treMndBinding="2300"
+                    seksMndBinding="2100"
+                    title="Kombinert oppfølging"
+                    description="Skreddersydde kostholds- og treningsplaner, med ukentlige justeringer og personlig støtte fra din coach. Oppnå dine mål med en personlig tilnærming og oppfølging."
+                >
+                    <li>
+                        Alt som inkluderes i kostholds- og treningsoppfølging
+                    </li>
+                    <li>Ukentlig check-in med tilpassinger</li>
+                    <li>Skreddersydd opplegg akkurat for deg</li>
+                    <li>Helhetlig tilnærming til dine mål og bedre helse</li>
+                </ServiceInfo>
+                <div className="inner">
+                    <ServicesIcons />
+                </div>
+                <ServiceInfo
+                    id="trening"
+                    utenBinding="2000"
+                    treMndBinding="1850"
+                    seksMndBinding="1700"
+                    title="Trenings oppfølging"
+                    description="Treningsopplegg som passer perfekt til dine
                             mål, med ukentlige check-ins og tilpassninger for å
                             sikre din fremgang."
-            >
-                <li>Skreddersydd treningsopplegg for deg!</li>
-                <li>Alt i en app med teknikkvideoer og mer</li>
-                <li>Ukentlig check-in med ukesrapport</li>
-                <li>Tracking av fremgang</li>
-                <li>Chat med din coach daglig</li>
-                <li>Justering av treningsprogram underveis</li>
-                <li>Hjelp med teknikk</li>
-            </ServiceInfo>
-            <div className="inner">
-                <ServicesIcons />
-            </div>
-            <ServiceInfo
-                id="kosthold"
-                utenBinding="2000"
-                treMndBinding="1850"
-                seksMndBinding="1700"
-                title="Kostholds oppfølging"
-                description="Skreddersydde kostholdsplaner og sunne
+                >
+                    <li>Skreddersydd treningsopplegg for deg!</li>
+                    <li>Alt i en app med teknikkvideoer og mer</li>
+                    <li>Ukentlig check-in med ukesrapport</li>
+                    <li>Tracking av fremgang</li>
+                    <li>Chat med din coach daglig</li>
+                    <li>Justering av treningsprogram underveis</li>
+                    <li>Hjelp med teknikk</li>
+                </ServiceInfo>
+                <div className="inner">
+                    <ServicesIcons />
+                </div>
+                <ServiceInfo
+                    id="kosthold"
+                    utenBinding="2000"
+                    treMndBinding="1850"
+                    seksMndBinding="1700"
+                    title="Kostholds oppfølging"
+                    description="Skreddersydde kostholdsplaner og sunne
                             oppskrifter som passer dine mål, med ukentlige
                             justeringer og grundig oppfølging."
-            >
-                <li>Skreddersydd kostholdsplan for dine mål</li>
-                <li>Ukentlige justeringer</li>
-                <li>Sunne og næringsrike oppskrifter</li>
-            </ServiceInfo>
+                >
+                    <li>Skreddersydd kostholdsplan for dine mål</li>
+                    <li>Ukentlige justeringer</li>
+                    <li>Sunne og næringsrike oppskrifter</li>
+                </ServiceInfo>
+            </div>
         </main>
     );
 }

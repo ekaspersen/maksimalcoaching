@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.maksimalcoaching.no
+
+# Sitemaps
+Sitemap: https://www.maksimalcoaching.no/sitemap.xml

@@ -11,7 +11,7 @@ const priceData = {
         bindings: {
             uten: {
                 name: "Uten binding",
-                priceId: "price_1Pf1EVRsF5Uw8CjuRpxnCHDb",
+                priceId: "price_1PibmrRsF5Uw8CjuHYf6fX4Z",
             },
             "3mnd": {
                 name: "3 mnd binding",
@@ -113,6 +113,16 @@ const coaches = [
     {
         id: "lenpre6",
         name: "Lena Prestmarken",
+        imageUrl: "/lenaprestmark.PNG",
+        services: {
+            trening: true,
+            kosthold: true,
+            kombinert: true,
+        },
+    },
+    {
+        id: "eskkas7",
+        name: "Eskil Kaspersen",
         imageUrl: "/lenaprestmark.PNG",
         services: {
             trening: true,

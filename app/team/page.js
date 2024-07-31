@@ -126,6 +126,24 @@ export const coaches = [
         tjeneste2: "Treningsoppfølging",
         tjeneste3: "Kostholdsoppfølging",
     },
+    {
+        // Lena Prestmarken
+        id: 7,
+        name: "Eskil Kaspersen Hagen",
+        image: "/lenaprestmark.PNG",
+        specialties: "Trening for muskelvekst, Styrketrening og Vektnedgang",
+        experiences: [
+            "Personlig trener, Active Education",
+            "Biomekanikk og avansert øvelsesanalyse, AFPT",
+        ],
+        about: "Eskil har lenge hatt en stor interesse for trening, kosthold og livsstil. Han er kunnskapsrik og en dyktig coach som ønsker hjelpe deg mot dine mål. Eskils spesialfelt er trening for muskelvekst, men han har også god erfaring med styrketrening og kosthold. Han er opptatt av at treningen skal være gøy og motiverende, og at du skal få en god opplevelse av treningen. Eskil har ikke fullført spesifikke studier innen kosthold, men har mye erfaring og kunnskap om dette gjennom egen research og erfaringer.",
+        email: "lena.prestmarken@maksimalcoaching.no",
+        instagram: "https://www.instagram.com/lenaprestmarken/",
+        instagramAt: "eskilkaspersen",
+        tjeneste1: "Kombinert oppfølging",
+        tjeneste2: "Treningsoppfølging",
+        tjeneste3: "Kostholdsoppfølging",
+    },
 ];
 export function CoachCard({ coach }) {
     return (

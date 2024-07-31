@@ -45,7 +45,10 @@ export default function Herobanner() {
                     </h2>
                 </div>
                 <div className="grid place-items-center gap-8">
-                    <ButtonGhost>BOOK KONSULTASJON NÅ</ButtonGhost>
+                    <Link href="/checkout">
+                        <ButtonGhost>BESTILL COACHING NÅ</ButtonGhost>
+                    </Link>
+
                     <Link href="/team">
                         <ButtonPrimaryDark>FINN DIN COACH</ButtonPrimaryDark>
                     </Link>

@@ -16,6 +16,14 @@ export async function POST(request) {
             );
         }
 
+        // Create a new customer with the comment in metadata
+        const customer = await stripe.customers.create({
+            metadata: {
+                customerComment: customerComment,
+                coachId: coachId,
+            },
+        });
+
         const session = await stripe.checkout.sessions.create({
             mode: "subscription",
             payment_method_types: ["card"],
@@ -27,10 +35,7 @@ export async function POST(request) {
             ],
             success_url: `${process.env.NEXT_PUBLIC_BASE_URL}/success?session_id={CHECKOUT_SESSION_ID}`,
             cancel_url: `${process.env.NEXT_PUBLIC_BASE_URL}/cancel`,
-            metadata: {
-                coachId: coachId,
-                customerComment: customerComment,
-            },
+            customer: customer.id,
         });
 
         return NextResponse.json({ sessionId: session.id });

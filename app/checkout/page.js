@@ -101,8 +101,8 @@ const coaches = [
         },
     },
     {
-        id: "#GroEli",
-        name: "Gro Eli",
+        id: "#GroEliPedersen",
+        name: "Gro Eli Pedersen",
         imageUrl: "/hello-groeli.jpg",
         services: {
             trening: true,

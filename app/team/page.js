@@ -58,7 +58,7 @@ export const coaches = [
         specialties:
             "Trening for muskelvekst, Trening for vektnedgang, Motivasjon",
         experiences: ["Personlig trener - AFPT", "Coaching - AFPT"],
-        about: "Med Anders Felipe som din trener, kan du være sikker på at du vil få den veiledningen og motivasjonen du trenger for å bli en enda bedre versjon av deg selv. Han lytter til deg og hjelper akkurat deg på best mulig måte. Du vil ikke bare få en kostholdsplan/treningsplan, men et tilpasset opplegg for deg, med ukentlig oppfølging og justeringer.",
+        about: "Med Anders Felipe som din trener, kan du være sikker på at du vil få den veiledningen og motivasjonen du trenger for å bli en enda bedre versjon av deg selv. Han lytter til deg og hjelper akkurat deg på best mulig måte. Du vil ikke bare få en treningsplan, men et tilpasset opplegg for deg, med ukentlig oppfølging og justeringer.",
         email: "anders.felipe@maksimalcoaching.no",
         instagram: "https://www.instagram.com/felipejrjr/",
         instagramAt: "felipejrjr",
@@ -85,7 +85,7 @@ export const coaches = [
     {
         // Gro Eli
         id: 5,
-        name: "Gro Eli",
+        name: "Gro Eli Pedersen",
         image: "/hello-groeli.jpg",
         specialties:
             "Trening før, under og etter graviditet, Trening for muskelvekst og bedre helse, Kosthold, rehabilitering",
@@ -127,7 +127,7 @@ export const coaches = [
         tjeneste3: "Kostholdsoppfølging",
     },
     {
-        // Lena Prestmarken
+        // Eskil Kaspersen Hagen
         id: 7,
         name: "Eskil Kaspersen Hagen",
         image: "/hello-eskil.jpg",
@@ -200,8 +200,7 @@ export function CoachCard({ coach }) {
                         </li>
                     )}
                 </ul>
-                <Link href="/checkout">
-                    {" "}
+                <Link className="w-fit" href="/checkout">
                     <ButtonPrimary>Bestill Coaching</ButtonPrimary>
                 </Link>
 

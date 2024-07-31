@@ -9,7 +9,7 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en">
             <head>
-                <link rel="icon" href="/M-logo.png" sizes="any" />;
+                <link rel="icon" href="/M-logo.png" sizes="any" />
             </head>
             <body className={montserrat.className}>
                 <Header />

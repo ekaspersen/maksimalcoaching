@@ -11,7 +11,7 @@ const priceData = {
         bindings: {
             uten: {
                 name: "Uten binding",
-                priceId: "price_1PieMdRsF5Uw8CjuwgnDdh4D",
+                priceId: "price_1Pf0lORsF5Uw8Cju9kq3U905",
             },
             "3mnd": {
                 name: "3 mnd binding",

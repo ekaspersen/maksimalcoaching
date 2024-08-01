@@ -9,7 +9,7 @@ export default function Herobanner() {
                 autoPlay
                 loop
                 muted
-                playsInline
+                playsinline
                 className="absolute z-0 w-auto min-w-full min-h-full object-cover"
             >
                 <source

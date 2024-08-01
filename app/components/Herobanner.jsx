@@ -5,25 +5,34 @@ import Link from "next/link";
 export default function Herobanner() {
     return (
         <div className="relative inner h-screen flex flex-col items-center justify-center overflow-hidden">
-            <video
-                autoPlay
-                loop
-                muted
-                playsinline
-                className="absolute z-0 w-auto min-w-full min-h-full object-cover"
-            >
-                <source
-                    src="/HeroVideo-small.mp4"
-                    type="video/mp4"
-                    media="(max-width: 720px)"
-                />
-                <source
-                    src="/HeroVideo-wide.webm"
-                    type="video/webm"
-                    media="(min-width: 721px)"
-                />
-                Your browser does not support the video tag.
-            </video>
+            <div className="absolute z-0 w-full h-full">
+                <picture>
+                    <source
+                        media="(max-width: 720px)"
+                        srcSet="/mobile-bg.jpg"
+                    />
+                    <source
+                        media="(min-width: 721px)"
+                        srcSet="/HeroVideo-wide.webm"
+                        type="video/webm"
+                    />
+                    <img
+                        src="/mobile-bg.jpg"
+                        alt="Fallback image"
+                        className="w-full h-full object-cover"
+                    />
+                </picture>
+                <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="absolute top-0 left-0 w-full h-full object-cover"
+                >
+                    <source src="/HeroVideo-wide.webm" type="video/webm" />
+                    Your browser does not support the video tag.
+                </video>
+            </div>
             <div className="absolute z-0 w-auto min-w-full min-h-full bg-clr_black opacity-90"></div>
 
             <div className="relative z-10 flex flex-col items-center py-28 gap-16">

@@ -3,9 +3,17 @@ import ServicesIcons from "../utilities/ServicesIcons";
 import Link from "next/link";
 
 export const metadata = {
-    title: "Maksimal Coaching | Våre tjenester",
+    title: "Våre Tjenester | Maksimal Coaching - Personlig Trening og Kostholdsoppfølging",
     description:
-        "Maksimal Coaching, nå dine mål med sertifiserte personlige trenere online",
+        "Utforsk våre skreddersydde tjenester for personlig trening og kostholdsoppfølging. Kombinert oppfølging, treningsplaner, og kostholdsrådgivning tilpasset dine mål.",
+    keywords:
+        "personlig trening, kostholdsoppfølging, treningsplaner, online coaching, vektnedgang, muskelvekst",
+    openGraph: {
+        title: "Personlig Trening og Kostholdsoppfølging | Maksimal Coaching",
+        description:
+            "Skreddersydde tjenester for dine treningsmål. Velg mellom kombinert oppfølging, treningsplaner, eller kostholdsrådgivning.",
+        images: [{ url: "https://www.maksimalcoaching.no/ina-spottes.PNG" }],
+    },
 };
 
 export function ServiceInfo({

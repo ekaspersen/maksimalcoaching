@@ -2,6 +2,20 @@ import React from "react";
 import { ButtonGhost, ButtonPrimary } from "../utilities/Buttons";
 import Link from "next/link";
 
+export const metadata = {
+    title: "Om Oss | Maksimal Coaching - Din Partner for Personlig Utvikling",
+    description:
+        "Lær mer om Maksimal Coaching, vår filosofi, og hvordan vi hjelper deg å nå dine treningsmål. Opplev forskjellen med våre dedikerte, sertifiserte trenere.",
+    keywords:
+        "om oss, personlig trening, treningsfilosofi, sertifiserte trenere, treningsresultater",
+    openGraph: {
+        title: "Om Maksimal Coaching | Din Partner for Treningssuksess",
+        description:
+            "Oppdag vår unike tilnærming til personlig trening og hvordan vi kan hjelpe deg å oppnå dine treningsmål.",
+        images: [{ url: "https://www.maksimalcoaching.no/M-logo.png" }],
+    },
+};
+
 export default function Omoss() {
     return (
         <>

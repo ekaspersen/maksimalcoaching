@@ -14,7 +14,7 @@ export default function Herobanner() {
             >
                 <source
                     src="/HeroVideo-small.mp4"
-                    type="video/webm"
+                    type="video/mp4"
                     media="(max-width: 720px)"
                 />
                 <source

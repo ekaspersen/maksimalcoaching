@@ -43,7 +43,7 @@ export const coaches = [
         name: "Ina Kolstad Rustad",
         image: "/hello-ina.jpg",
         specialties:
-            "Trening for muskelvekst, Trening for økt styrke og Kosthold",
+            "Trening før, under og etter graviditet, Trening for muskelvekst, Trening for økt styrke og Kosthold",
         experiences: [
             "Personlig trener - Safe Education",
             "Kostholdsveileder - Safe Education",

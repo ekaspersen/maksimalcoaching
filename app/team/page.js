@@ -3,9 +3,17 @@ import Link from "next/link";
 import { ButtonPrimary } from "../utilities/Buttons";
 
 export const metadata = {
-    title: "Maksimal Coaching | Finn din coach",
+    title: "Møt teamet vårt | Maksimal Coaching",
     description:
-        "Maksimal Coaching, nå dine mål med sertifiserte personlige trenere online",
+        "Bli kjent med vårt team av sertifiserte personlige trenere. Finn den perfekte coachen for dine treningsmål og behov hos Maksimal Coaching.",
+    keywords:
+        "personlige trenere, online coaches, treningseksperter, kostholdseksperter, fitness coaches",
+    openGraph: {
+        title: "Ekspertteamet hos Maksimal Coaching",
+        description:
+            "Velg din ideelle coach fra vårt team av sertifiserte personlige trenere. Spesialisert i styrketrening, vektnedgang, og kosthold.",
+        images: [{ url: "https://www.maksimalcoaching.no/ina-spottes.PNG" }],
+    },
 };
 
 // coachesData.js

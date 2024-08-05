@@ -8,52 +8,65 @@ import ToS from "../components/ToS";
 const priceData = {
     kombinert: {
         name: "Kombinert oppfølging",
+        description:
+            "Få både trenings- og kostholdsoppfølging for maksimal effekt.",
         bindings: {
             uten: {
                 name: "Uten binding",
                 priceId: "price_1Pf0lORsF5Uw8Cju9kq3U905",
+                price: 2500,
             },
             "3mnd": {
                 name: "3 mnd binding",
                 priceId: "price_1Pf0ijRsF5Uw8CjuVO4TesUi",
+                price: 2300,
             },
             "6mnd": {
                 name: "6 mnd binding",
                 priceId: "price_1Pf0jMRsF5Uw8CjufgftVR0U",
+                price: 2100,
             },
         },
     },
     trening: {
         name: "Treningsoppfølging",
+        description: "Fokusert treningsopplegg tilpasset dine mål og behov.",
         bindings: {
             uten: {
                 name: "Uten binding",
                 priceId: "price_1Pf0k1RsF5Uw8CjuCURUajOz",
+                price: 2000,
             },
             "3mnd": {
                 name: "3 mnd binding",
                 priceId: "price_1Pf0kWRsF5Uw8CjuxFhjwpE8",
+                price: 1850,
             },
             "6mnd": {
                 name: "6 mnd binding",
                 priceId: "price_1Pf0krRsF5Uw8CjuTcwTsPge",
+                price: 1700,
             },
         },
     },
     kosthold: {
         name: "Kostholdsoppfølging",
+        description: "Skreddersydd kostholdsplan for å støtte dine mål.",
         bindings: {
             uten: {
                 name: "Uten binding",
                 priceId: "price_1Pf0lORsF5Uw8Cju9kq3U905",
+                price: 2000,
             },
             "3mnd": {
                 name: "3 mnd binding",
                 priceId: "price_1Pf0llRsF5Uw8CjuWLfFtfQp",
+                price: 1850,
             },
             "6mnd": {
                 name: "6 mnd binding",
                 priceId: "price_1Pf0mKRsF5Uw8CjuGyqi1f2B",
+                price: 1700,
             },
         },
     },
@@ -136,7 +149,6 @@ export default function Checkout() {
     const [selectedPackage, setSelectedPackage] = useState("");
     const [selectedBinding, setSelectedBinding] = useState("");
     const [selectedCoach, setSelectedCoach] = useState("");
-    const [customerComment, setCustomerComment] = useState("");
 
     const getPriceId = () => {
         if (selectedPackage && selectedBinding) {
@@ -209,7 +221,7 @@ export default function Checkout() {
             </div>
 
             {selectedCoach && (
-                <div className="flex flex-col gap-2">
+                <div className="flex flex-col gap-3">
                     <h3 className="h3_text mb-1">Velg pakke:</h3>
                     {getAvailablePackages().map((id) => (
                         <label
@@ -237,7 +249,14 @@ export default function Checkout() {
                                             : ""
                                     }`}
                             />
-                            {priceData[id].name}
+                            <div>
+                                <span className="font-bold">
+                                    {priceData[id].name}
+                                </span>
+                                <p className="text-sm text-clr_gray">
+                                    {priceData[id].description}
+                                </p>
+                            </div>
                         </label>
                     ))}
                 </div>
@@ -273,39 +292,29 @@ export default function Checkout() {
                                                         : ""
                                                 }`}
                                 />
-                                {data.name}
+                                <span className="flex items-center gap-1">
+                                    <span>{data.name}</span>
+                                    <span className="text-clr_gray text-sm">
+                                        -
+                                    </span>
+                                    <span className=" text-clr_primary_dark text-sm">
+                                        {data.price},- kr/mnd
+                                    </span>
+                                </span>
                             </label>
                         )
                     )}
                 </div>
             )}
-            {selectedPackage && selectedBinding && (
-                <div className="flex flex-col gap-2">
-                    <h3 className="h3_text mb-1">
-                        Kommentar til coach:{" "}
-                        <span className="text-base text-clr_primary_dark">
-                            - Valgfritt
-                        </span>
-                    </h3>
-                    <textarea
-                        value={customerComment}
-                        maxLength={1000}
-                        onChange={(e) => setCustomerComment(e.target.value)}
-                        placeholder="Fortell litt om dine mål og ønsker..."
-                        className="w-full h-32 p-2 bg-black text-white border-2 border-red-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
-                    />
-                    <span className="text-xs">(Max 1000 tegn)</span>
-                </div>
-            )}
+
             {selectedPackage && selectedBinding && selectedCoach ? (
                 <SubscribeButton
                     priceId={getPriceId()}
                     coachId={selectedCoach}
-                    customerComment={customerComment}
                 />
             ) : (
                 <button className="button cursor-not-allowed h-fit bg-transparent border-4 border-clr_white">
-                    Velg pakke, bindingstid og coach for å fortsette
+                    Velg en coach og pakke for å fortsette
                 </button>
             )}
             <ToS />

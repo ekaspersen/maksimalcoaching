@@ -56,9 +56,6 @@ export default function Footer() {
                     <FooterLink href="/omoss">Om oss</FooterLink>
                 </div>
             </section>
-            <div className="inner pb-8">
-                <ToS />
-            </div>
             <div className="pb-8 inner">
                 <Image
                     className="max-w-full"
@@ -67,6 +64,9 @@ export default function Footer() {
                     height={76}
                     alt="Maksimal Coaching logo"
                 />
+            </div>{" "}
+            <div className="inner pb-8">
+                <ToS />
             </div>
         </footer>
     );

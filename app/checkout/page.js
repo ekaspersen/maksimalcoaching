@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Image from "next/image";
 import SubscribeButton from "../components/SubscribeButton";
@@ -74,7 +74,7 @@ const priceData = {
     },
 };
 
-export default function Checkout() {
+function CheckoutContent() {
     const searchParams = useSearchParams();
     const preselectedCoach = searchParams.get("coach");
 
@@ -286,5 +286,13 @@ export default function Checkout() {
             </div>
             <ToS />
         </div>
+    );
+}
+
+export default function Checkout() {
+    return (
+        <Suspense fallback={<div>Loading...</div>}>
+            <CheckoutContent />
+        </Suspense>
     );
 }

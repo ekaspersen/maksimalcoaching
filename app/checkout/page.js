@@ -1,9 +1,11 @@
 "use client";
 
-import { useState } from "react";
-import SubscribeButton from "../components/SubscribeButton";
+import { useState, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 import Image from "next/image";
+import SubscribeButton from "../components/SubscribeButton";
 import ToS from "../components/ToS";
+import { coaches } from "../data/coaches";
 
 const priceData = {
     kombinert: {
@@ -72,83 +74,20 @@ const priceData = {
     },
 };
 
-const coaches = [
-    {
-        id: "#MarkusRåheim",
-        name: "Markus Råheim",
-        imageUrl: "/hello-markus.jpg",
-        services: {
-            trening: true,
-            kosthold: true,
-            kombinert: true,
-        },
-    },
-    {
-        id: "#InaKolstadRustad",
-        name: "Ina Kolstad Rustad",
-        imageUrl: "/hello-ina.jpg",
-        services: {
-            trening: true,
-            kosthold: true,
-            kombinert: true,
-        },
-    },
-    {
-        id: "#AndersFelipe",
-        name: "Anders Felipe",
-        imageUrl: "/hello-anders.jpg",
-        services: {
-            trening: true,
-            kosthold: false,
-            kombinert: false,
-        },
-    },
-    {
-        id: "#MathiasAbrahamsen",
-        name: "Mathias Abrahamsen",
-        imageUrl: "/hello-mathias.jpg",
-        services: {
-            trening: true,
-            kosthold: true,
-            kombinert: true,
-        },
-    },
-    {
-        id: "#GroEliPedersen",
-        name: "Gro Eli Pedersen",
-        imageUrl: "/hello-groeli.jpg",
-        services: {
-            trening: true,
-            kosthold: true,
-            kombinert: true,
-        },
-    },
-    {
-        id: "#LenaPrestmarken",
-        name: "Lena Prestmarken",
-        imageUrl: "/hello-lena.jpg",
-        services: {
-            trening: true,
-            kosthold: true,
-            kombinert: true,
-        },
-    },
-    {
-        id: "#EskilKaspersen",
-        name: "Eskil Kaspersen",
-        imageUrl: "/hello-eskil.jpg",
-        services: {
-            trening: true,
-            kosthold: true,
-            kombinert: true,
-        },
-    },
-];
-
 export default function Checkout() {
+    const searchParams = useSearchParams();
+    const preselectedCoach = searchParams.get("coach");
+
     const [selectedPackage, setSelectedPackage] = useState("");
     const [selectedBinding, setSelectedBinding] = useState("");
     const [selectedCoach, setSelectedCoach] = useState("");
+    const [couponCode, setCouponCode] = useState("");
+
+    useEffect(() => {
+        if (preselectedCoach) {
+            setSelectedCoach(preselectedCoach);
+        }
+    }, [preselectedCoach]);
 
     const getPriceId = () => {
         if (selectedPackage && selectedBinding) {
@@ -165,7 +104,16 @@ export default function Checkout() {
         if (!selectedCoach) return [];
         const coach = coaches.find((c) => c.id === selectedCoach);
         return Object.keys(priceData).filter(
-            (packageName) => coach.services[packageName]
+            (packageName) =>
+                coach[
+                    `tjeneste${
+                        packageName === "kombinert"
+                            ? "1"
+                            : packageName === "trening"
+                            ? "2"
+                            : "3"
+                    }`
+                ]
         );
     };
 
@@ -173,6 +121,10 @@ export default function Checkout() {
         setSelectedCoach(e.target.value);
         setSelectedPackage("");
         setSelectedBinding("");
+    };
+
+    const handleCouponChange = (e) => {
+        setCouponCode(e.target.value);
     };
 
     return (
@@ -183,7 +135,7 @@ export default function Checkout() {
                 {selectedCoachData && (
                     <div>
                         <Image
-                            src={selectedCoachData.imageUrl}
+                            src={selectedCoachData.image}
                             alt={selectedCoachData.name}
                             width={240}
                             height={240}
@@ -311,12 +263,27 @@ export default function Checkout() {
                 <SubscribeButton
                     priceId={getPriceId()}
                     coachId={selectedCoach}
+                    couponCode={couponCode} // Pass the coupon code here
                 />
             ) : (
                 <button className="button cursor-not-allowed h-fit bg-transparent border-4 border-clr_white">
                     Velg en coach og pakke for å fortsette
                 </button>
             )}
+            <div className="flex flex-col w-fit">
+                <label className="flex flex-col gap-1">
+                    <span className="font-bold italic opacity-50 pl-4">
+                        Promoteringskode
+                    </span>
+                    <input
+                        type="text"
+                        value={couponCode}
+                        onChange={handleCouponChange}
+                        placeholder="Skriv inn din kode"
+                        className=" w-56 bg-clr_black border-2 border-clr_primary_dark rounded-full py-2 px-4 pr-8 leading-tight focus:outline-none focus:ring-2 focus:ring-clr_primary focus:border-clr_primary opacity-50 hover:opacity-100 focus:opacity-100"
+                    />
+                </label>
+            </div>
             <ToS />
         </div>
     );

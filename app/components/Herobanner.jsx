@@ -1,11 +1,18 @@
+"use client";
 import Image from "next/image";
 import { ButtonGhost, ButtonPrimaryDark } from "../utilities/Buttons";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function Herobanner() {
     return (
-        <div className="relative inner h-screen flex flex-col items-center justify-center overflow-hidden">
-            <div className="absolute z-0 w-full h-full">
+        <div className="relative my-16 md:my-20 inner min-h-min h-screen flex flex-col items-center justify-center overflow-hidden">
+            <motion.div
+                initial={{ opacity: 0, x: 0 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4 }}
+                className="absolute z-0 w-full h-full"
+            >
                 <picture>
                     <source
                         media="(max-width: 720px)"
@@ -32,10 +39,15 @@ export default function Herobanner() {
                     <source src="/HeroVideo-wide.webm" type="video/webm" />
                     Your browser does not support the video tag.
                 </video>
-            </div>
+            </motion.div>
             <div className="absolute z-0 w-auto min-w-full min-h-full bg-clr_black opacity-90"></div>
 
-            <div className="relative z-10 flex flex-col items-center py-28 gap-16">
+            <motion.div
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: 1.2 }}
+                className="relative z-10 flex flex-col items-center py-28 gap-16"
+            >
                 <div className="flex flex-col gap-4">
                     <div className="flex flex-col items-center gap-2">
                         <Image
@@ -62,7 +74,7 @@ export default function Herobanner() {
                         <ButtonPrimaryDark>FINN DIN COACH</ButtonPrimaryDark>
                     </Link>
                 </div>
-            </div>
+            </motion.div>
         </div>
     );
 }

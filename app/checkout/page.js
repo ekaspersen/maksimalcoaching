@@ -128,7 +128,7 @@ function CheckoutContent() {
     };
 
     return (
-        <div className="flex flex-col gap-8 inner min-h-screen">
+        <div className="flex flex-col gap-8 inner min-h-screen  my-16 md:my-20">
             <h1 className="h1_text">Checkout</h1>
 
             <div className="flex flex-col gap-2">
@@ -273,7 +273,7 @@ function CheckoutContent() {
             <div className="flex flex-col w-fit">
                 <label className="flex flex-col gap-1">
                     <span className="font-bold italic opacity-50 pl-4">
-                        Promoteringskode
+                        Kampanjekode
                     </span>
                     <input
                         type="text"

@@ -8,7 +8,7 @@ export const metadata = {
 };
 export default function Cancel() {
     return (
-        <div className="inner min-h-[80vh] flex flex-col justify-center gap-16">
+        <div className="inner min-h-[80vh] flex flex-col justify-center gap-16  my-16 md:my-20">
             <div className="flex flex-col gap-4">
                 <h1 className="h1_text">Kansellert</h1>
                 <p className="p_text">

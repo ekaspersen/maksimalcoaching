@@ -21,7 +21,7 @@ export default function CoachProfile({ params }) {
     };
 
     return (
-        <main className="pb-24 gap-8 flex flex-col">
+        <main className="pb-24 my-16 md:my-20 gap-8 flex flex-col">
             <section className="inner w-full pt-4 pb-12">
                 <CoachDropdown
                     currentCoach={coach}
@@ -172,7 +172,7 @@ const CoachDetails = ({ coach }) => (
                 </li>
             )}
         </ul>
-        <Link className="w-fit" href={`/checkout?coach=${coach.id}`}>
+        <Link className="w-fit text-base" href={`/checkout?coach=${coach.id}`}>
             <ButtonPrimary>Bestill coaching med {coach.fname}</ButtonPrimary>
         </Link>
         <Link

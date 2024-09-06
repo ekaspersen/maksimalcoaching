@@ -45,7 +45,7 @@ function SuccessContent() {
     if (error) return <div>Error: {error}</div>;
 
     return (
-        <div className="inner flex flex-col gap-8 py-48">
+        <div className="inner my-16 md:my-20 flex flex-col gap-8 py-48">
             <h1 className="h1_text">Bestilling vellykket!</h1>
 
             {sessionData && (

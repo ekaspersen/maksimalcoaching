@@ -25,7 +25,7 @@ export function CoachCard({ coach }) {
                     width={512}
                     height={512}
                     alt={`Bilde av ${coach.name}`}
-                    className="aspect-square w-80 max-w-full border-4 object-cover object-center rounded-lg"
+                    className="aspect-square w-80 max-w-full border-2 object-cover object-center rounded-lg"
                 />
                 <h2 className="text-3xl mt-2 font-bold italic">{coach.name}</h2>
                 <h3 className="italic text-clr_primary_dark font-bold">
@@ -73,8 +73,8 @@ export function CoachCard({ coach }) {
 export default function Team() {
     return (
         <>
-            <main>
-                <section className="inner relative   flex items-end py-8 ">
+            <main className=" my-16 md:my-20">
+                <section className="inner relative  flex items-end py-8 ">
                     <h1 className="font-bold italic text-4xl flex flex-col z-10">
                         <span className="lg:text-5xl">Møt teamet vårt</span>
                         <span className="text-base lg:text-2xl">

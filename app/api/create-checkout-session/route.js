@@ -1,3 +1,4 @@
+// app/api/create-checkout-session/route.js
 import { NextResponse } from "next/server";
 import Stripe from "stripe";
 
@@ -7,7 +8,8 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
 
 export async function POST(request) {
     try {
-        const { priceId, coachId, customerComment } = await request.json();
+        const { priceId, coachId, customerComment, couponCode } =
+            await request.json();
 
         if (!priceId || !coachId) {
             return NextResponse.json(
@@ -24,7 +26,7 @@ export async function POST(request) {
             },
         });
 
-        const session = await stripe.checkout.sessions.create({
+        const sessionData = {
             mode: "subscription",
             payment_method_types: ["card"],
             line_items: [
@@ -36,7 +38,18 @@ export async function POST(request) {
             success_url: `${process.env.NEXT_PUBLIC_BASE_URL}/success?session_id={CHECKOUT_SESSION_ID}`,
             cancel_url: `${process.env.NEXT_PUBLIC_BASE_URL}/cancel`,
             customer: customer.id,
-        });
+        };
+
+        // Add the coupon code if provided
+        if (couponCode) {
+            sessionData.discounts = [
+                {
+                    coupon: couponCode,
+                },
+            ];
+        }
+
+        const session = await stripe.checkout.sessions.create(sessionData);
 
         return NextResponse.json({ sessionId: session.id });
     } catch (error) {

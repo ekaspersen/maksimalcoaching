@@ -24,7 +24,12 @@ function Header() {
 
     return (
         <>
-            <header className="inner py-4 bg-clr_black  flex items-center justify-between sticky text-white font-extrabold top-0 z-50 overflow-clip">
+            <motion.header
+                initial={{ opacity: 0, x: 0 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: 0.4 }}
+                className="inner py-4 bg-clr_black  flex items-center justify-between fixed w-full text-white font-extrabold left-0 right-0 top-0 z-50 overflow-clip"
+            >
                 <div className="flex gap-4">
                     <MenuLink href="/">
                         <Image
@@ -80,7 +85,7 @@ function Header() {
                     </MenuLink>
                     <MenuLink href="/team">FINN COACH</MenuLink>
                 </nav>
-            </header>
+            </motion.header>
             <AnimatePresence>
                 {menuOpen && (
                     <motion.nav

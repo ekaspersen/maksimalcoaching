@@ -4,7 +4,12 @@ import { useRouter } from "next/navigation";
 import { loadStripe } from "@stripe/stripe-js";
 import { ButtonPrimary } from "../utilities/Buttons";
 
-export default function SubscribeButton({ priceId, coachId, customerComment }) {
+export default function SubscribeButton({
+    priceId,
+    coachId,
+    customerComment,
+    couponCode,
+}) {
     const [loading, setLoading] = useState(false);
     const router = useRouter();
 
@@ -16,7 +21,12 @@ export default function SubscribeButton({ priceId, coachId, customerComment }) {
                 headers: {
                     "Content-Type": "application/json",
                 },
-                body: JSON.stringify({ priceId, coachId, customerComment }),
+                body: JSON.stringify({
+                    priceId,
+                    coachId,
+                    customerComment,
+                    couponCode,
+                }), // Include couponCode here
             });
             if (!response.ok) {
                 const errorData = await response.json();

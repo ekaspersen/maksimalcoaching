@@ -19,7 +19,7 @@ export const metadata = {
 export default function Omoss() {
     return (
         <>
-            <section className="inner w-full relative min-h-[480px] lg:min-h-[600px]  flex flex-col justify-end lg:gap-1 py-8 ">
+            <section className="inner w-full relative min-h-[480px] lg:min-h-[600px] my-16 md:my-20 flex flex-col justify-end lg:gap-1 py-8 ">
                 <div className="absolute right-0 w-full  lg:max-w-[900px] top-0 bottom-0 bg-[url('/ina-spottes.PNG')] bg-cover bg-center"></div>
                 <div className="absolute inset-0 bg-gradient-to-b lg:h-3/4 lg:mt-auto from-transparent to-clr_black"></div>
 

@@ -38,8 +38,8 @@ export default function CoachProfile({ params }) {
                     </h2>
                     <Image
                         src={coach.image}
-                        width={420}
-                        height={420}
+                        width={2040}
+                        height={2040}
                         alt={`Bilde av ${coach.name}`}
                         className="aspect-square w-full object-cover object-center border-2 max-w-96 rounded-lg"
                     />

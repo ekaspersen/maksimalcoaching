@@ -137,9 +137,9 @@ function CheckoutContent() {
                         <Image
                             src={selectedCoachData.image}
                             alt={selectedCoachData.name}
-                            width={240}
-                            height={240}
-                            className="aspect-square rounded-2xl object-cover"
+                            width={1080}
+                            height={1080}
+                            className="aspect-square rounded-2xl ring-4 ring-clr_primary_dark max-w-64 object-cover"
                         />
                     </div>
                 )}

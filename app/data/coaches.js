@@ -3,7 +3,7 @@ export const coaches = [
         id: "markus-raheim",
         name: "Markus Råheim",
         fname: "Markus",
-        image: "/hello-markus.jpg",
+        image: "/markus-r.jpg",
         specialties:
             "Trening for muskelvekst, Maksimal styrke, Kosthold og vektnedgang",
         experiences: [
@@ -38,7 +38,7 @@ Markus tar på seg alle typer kunder og brenner for å hjelpe akkurat deg mot di
         id: "ina-kolstad-rustad",
         name: "Ina Kolstad Rustad",
         fname: "Ina",
-        image: "/hello-ina.jpg",
+        image: "/inasuper.JPG",
         specialties:
             "Trening før, under og etter graviditet, Trening for muskelvekst, Trening for økt styrke og Kosthold",
         experiences: [
@@ -69,7 +69,7 @@ Ina er en motiverende og kompetent trener som vil hjelpe akkurat deg til å nå 
         id: "anders-felipe",
         name: "Anders Felipe",
         fname: "Anders",
-        image: "/hello-anders.jpg",
+        image: "/anders-f.jpg",
         specialties:
             "Trening for muskelvekst, Trening for vektnedgang, Motivasjon",
         experiences: ["Personlig trener - AFPT", "Coaching - AFPT"],
@@ -91,7 +91,7 @@ Med Anders Felipe som din trener, kan du være sikker på at du vil få den veil
         id: "mathias-abrahamsen",
         name: "Mathias Abrahamsen",
         fname: "Mathias",
-        image: "/hello-mathias.jpg",
+        image: "/mathias-a.jpg",
         specialties: "Fitness, Trening for muskelvekst, Kosthold",
         experiences: [
             "Sertifisert Personlig trener - Active Education",
@@ -122,7 +122,7 @@ I et samarbeid med Mathias vil du ikke bare nå målene dine, du vil også lære
         id: "gro-eli-pedersen",
         name: "Gro Eli Pedersen",
         fname: "Gro Eli",
-        image: "/hello-groeli.jpg",
+        image: "/gro-e.jpg",
         specialties:
             "Trening før, under og etter graviditet, Trening for muskelvekst og bedre helse, Kosthold, rehabilitering",
         experiences: [
@@ -160,7 +160,7 @@ Hvis du ønsker hjelp til å oppnå dine mål, vil Gro-Eli gjerne være med deg 
         id: "lena-prestmarken",
         name: "Lena Prestmarken",
         fname: "Lena",
-        image: "/hello-lena.jpg",
+        image: "/lena-p.jpg",
         specialties:
             "Trening før, under og etter graviditet, Trening for muskelvekst og bedre helse, Kosthold, rehabilitering",
         experiences: [

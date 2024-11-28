@@ -88,37 +88,6 @@ Med Anders Felipe som din trener, kan du være sikker på at du vil få den veil
         tjeneste2: "Treningsoppfølging",
     },
     {
-        id: "mathias-abrahamsen",
-        name: "Mathias Abrahamsen",
-        fname: "Mathias",
-        image: "/mathias-a.jpg",
-        specialties: "Fitness, Trening for muskelvekst, Kosthold",
-        experiences: [
-            "Sertifisert Personlig trener - Active Education",
-            "Kostholdsveileder - Active Education",
-        ],
-        about: `ERFARING:
-Mathias har 8 års treningserfaring, og har både bygget muskler, mistet fett og ikke minst gjort en livsstilsendring gjennom sin karriere.
-
-KLIENTFOKUS:
-Mathias har de siste årene satset spesifikt på kroppsbygging hvor han konkurrerer aktivt, og har ekspertise innenfor hypertrofi og muskelvekst. Han har de siste to årene lært mer om sin egen kropp og hvordan kosthold, trening og riktig mindset kan lønne seg.
-
-
-Mathias tar på seg klienter med alle typer målsetninger - alt fra livsstilsklienter til fitnessutøvere.
-
-HVORFOR VELGE MATHIAS SOM COACH:
-Med Mathias som coach får du ikke bare en plan og instrukser om hva du skal gjøre. Du får også en engasjert støttespiller som jobber beinhardt for at du skal nå målene dine.
-I et samarbeid med Mathias vil du ikke bare nå målene dine, du vil også lære mye på veien. Mathias er opptatt av at hans kunder skal lære og forstå hele prosessen, og hvorfor vi gjør som vi gjør.`,
-        shortBio:
-            "I et samarbeid med Mathias vil du ikke bare nå målene dine, du vil også lære mye på veien. Mathias er opptatt av at hans kunder skal lære og forstå hele prosessen, og hvorfor vi gjør som vi gjør.",
-        email: "mathias.abrahamsen@maksimalcoaching.no",
-        instagram: "https://www.instagram.com/mathiasabra/",
-        instagramAt: "mathiasabra",
-        tjeneste1: "Kombinert oppfølging",
-        tjeneste2: "treningsoppfølging",
-        tjeneste3: "kostholdsoppfølging",
-    },
-    {
         id: "gro-eli-pedersen",
         name: "Gro Eli Pedersen",
         fname: "Gro Eli",

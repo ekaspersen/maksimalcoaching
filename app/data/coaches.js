@@ -94,7 +94,10 @@ Med Anders Felipe som din trener, kan du være sikker på at du vil få den veil
         image: "/eskil-e.jpg",
         specialties:
             "Kondisjonstrening, Trening for styrke, Trening for eksplosivitet",
-        experiences: ["Personlig trener - AFPT", "Kretslagstrener langrenn"],
+        experiences: [
+            "Personlig trener - AFPT",
+            "10 års erfaring med kondisjonstrening",
+        ],
         about: `HVEM ER ESKIL?:
         Eskil er en kunnskapsrik og dyktig coach. Han er en av de som var med å starte opp Maksimal Coaching. Han er fagansvarlig innenfor utholdenhetstrening i teamet og økonomisk ansvarlig i selskapet. 
 

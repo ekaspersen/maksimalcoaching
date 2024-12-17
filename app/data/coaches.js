@@ -88,6 +88,32 @@ Med Anders Felipe som din trener, kan du være sikker på at du vil få den veil
         tjeneste2: "Treningsoppfølging",
     },
     {
+        id: "eskil-engdahl",
+        name: "Eskil Engdahl",
+        fname: "Eskil",
+        image: "/eskil-e.jpg",
+        specialties:
+            "Kondisjonstrening, Trening for styrke, Trening for eksplosivitet",
+        experiences: ["Personlig trener - AFPT", "Kretslagstrener langrenn"],
+        about: `HVEM ER ESKIL?:
+        Eskil er en kunnskapsrik og dyktig coach. Han er en av de som var med å starte opp Maksimal Coaching. Han er fagansvarlig innenfor utholdenhetstrening i teamet og økonomisk ansvarlig i selskapet. 
+
+ERFARING:  
+Eskil har over 10 års erfaring med utholdenhetstrening og styrketrening. I dag er han kretslagstrener for Møre og Romsdal sitt kretslag i langrenn. Spesialfeltet til Eskil er utholdenhetstrening, så om du ønsker bedre utholdenhet eller vil forbedre din fysiske form, er dette coachen for deg. 
+
+HVORFOR VELGE ESKIL SOM COACH?:  
+Han tilpasser treningen individuelt for deg og setter dine ønsker først!  Eskil tar på seg alle typer kunder og brenner for å hjelpe folk til å oppnå bedre fysisk form. Han har god erfaring med trening innenfor både løping, langrenn og annen sport.
+`,
+        shortBio:
+            "Eskil er en kunnskapsrik og dyktig coach. Han er en av de som var med å starte opp Maksimal Coaching. Han er fagansvarlig innenfor utholdenhetstrening i teamet og økonomisk ansvarlig i selskapet.",
+        email: "eskil.engdahl@maksimalcoaching.no",
+        instagram: "https://www.instagram.com/felipejrjr/",
+        instagramAt: "eskilengdahl",
+        tjeneste1: "Kombinert oppfølging",
+        tjeneste2: "Treningsoppfølging",
+        tjeneste3: "Kostholdsoppfølging",
+    },
+    {
         id: "gro-eli-pedersen",
         name: "Gro Eli Pedersen",
         fname: "Gro Eli",

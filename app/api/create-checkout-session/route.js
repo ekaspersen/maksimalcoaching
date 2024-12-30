@@ -2,9 +2,16 @@
 import { NextResponse } from "next/server";
 import Stripe from "stripe";
 
+// Initialize Stripe
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
     apiVersion: "2023-10-16",
 });
+
+// Map human-readable codes to actual Stripe coupon IDs
+// E.g., "newyears25" => "coupon_abc123"
+const COUPON_MAP = {
+    newyears25: "promo_1QbndGRsF5Uw8CjuQBV1aLnQ", // <-- Replace "coupon_abc123" with your real coupon ID from Stripe
+};
 
 export async function POST(request) {
     try {
@@ -26,6 +33,7 @@ export async function POST(request) {
             },
         });
 
+        // Base session configuration
         const sessionData = {
             mode: "subscription",
             payment_method_types: ["card"],
@@ -40,15 +48,30 @@ export async function POST(request) {
             customer: customer.id,
         };
 
-        // Add the coupon code if provided
+        // If a coupon code is provided, map to correct Stripe coupon ID
         if (couponCode) {
-            sessionData.discounts = [
-                {
-                    coupon: couponCode,
-                },
-            ];
+            // Normalize user input (in case they type uppercase, etc.)
+            const normalizedCode = couponCode.trim().toLowerCase();
+            const stripeCouponId = COUPON_MAP[normalizedCode];
+
+            if (stripeCouponId) {
+                // If we found a matching coupon ID, add discount to session
+                sessionData.discounts = [
+                    {
+                        coupon: stripeCouponId,
+                    },
+                ];
+            } else {
+                // Optionally throw an error or ignore
+                // If you want to prevent checkout if coupon is invalid:
+                return NextResponse.json(
+                    { error: `Ugyldig kupongkode: ${couponCode}` },
+                    { status: 400 }
+                );
+            }
         }
 
+        // Create the Checkout Session
         const session = await stripe.checkout.sessions.create(sessionData);
 
         return NextResponse.json({ sessionId: session.id });

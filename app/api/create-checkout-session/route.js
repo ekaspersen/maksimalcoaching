@@ -10,7 +10,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
 // Map human-readable codes to actual Stripe coupon IDs
 // E.g., "newyears25" => "coupon_abc123"
 const COUPON_MAP = {
-    newyears25: "promo_1QbndGRsF5Uw8CjuQBV1aLnQ", // <-- Replace "coupon_abc123" with your real coupon ID from Stripe
+    newyears25: "IYzLwSki", // <-- Replace "coupon_abc123" with your real coupon ID from Stripe
 };
 
 export async function POST(request) {

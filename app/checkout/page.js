@@ -7,6 +7,12 @@ import SubscribeButton from "../components/SubscribeButton";
 import ToS from "../components/ToS";
 import { coaches } from "../data/coaches";
 
+// --- Legg inn rabattkoder og hvilke bindinger de er gyldige for ---
+const DISCOUNT_RULES = {
+    // F.eks. "newyears25" er kun gyldig for 3 måneders binding
+    newyears25: ["3mnd"],
+};
+
 const priceData = {
     kombinert: {
         name: "Kombinert oppfølging",
@@ -82,6 +88,7 @@ function CheckoutContent() {
     const [selectedBinding, setSelectedBinding] = useState("");
     const [selectedCoach, setSelectedCoach] = useState("");
     const [couponCode, setCouponCode] = useState("");
+    const [errorMessage, setErrorMessage] = useState(""); // <-- Ny state for feil
 
     useEffect(() => {
         if (preselectedCoach) {
@@ -89,6 +96,7 @@ function CheckoutContent() {
         }
     }, [preselectedCoach]);
 
+    // Henter ut korrekt Price ID basert på valgt pakke og binding
     const getPriceId = () => {
         if (selectedPackage && selectedBinding) {
             return priceData[selectedPackage].bindings[selectedBinding].priceId;
@@ -100,6 +108,7 @@ function CheckoutContent() {
         (coach) => coach.id === selectedCoach
     );
 
+    // Filtrerer pakkene basert på hvilke tjenester coachen tilbyr
     const getAvailablePackages = () => {
         if (!selectedCoach) return [];
         const coach = coaches.find((c) => c.id === selectedCoach);
@@ -121,16 +130,52 @@ function CheckoutContent() {
         setSelectedCoach(e.target.value);
         setSelectedPackage("");
         setSelectedBinding("");
+        setErrorMessage("");
     };
 
     const handleCouponChange = (e) => {
         setCouponCode(e.target.value);
     };
 
+    // Validerer kupongkode mot valgt binding
+    useEffect(() => {
+        if (!couponCode) {
+            // Ingen kode => ingen feilmelding
+            setErrorMessage("");
+            return;
+        }
+        const code = couponCode.trim().toLowerCase();
+
+        // Sjekk om koden finnes i DISCOUNT_RULES
+        if (DISCOUNT_RULES[code]) {
+            // Koden er gyldig, men er bindingen gyldig for koden?
+            const validBindings = DISCOUNT_RULES[code];
+            if (selectedBinding && !validBindings.includes(selectedBinding)) {
+                // Bindingen er ikke blant de gyldige
+                setErrorMessage(
+                    `Rabattkoden "${code}" er kun gyldig for ${validBindings.join(
+                        ", "
+                    )} mnd binding.`
+                );
+            } else {
+                setErrorMessage("");
+            }
+        } else {
+            // Kode ikke gjenkjent => ingen spesifikk feilmelding,
+            // men du kan eventuelt vise en melding her
+            setErrorMessage("");
+        }
+    }, [couponCode, selectedBinding]);
+
+    // Sjekker om alt er valgt OG ingen feil
+    const isFormCompleteAndValid =
+        selectedPackage && selectedBinding && selectedCoach && !errorMessage;
+
     return (
-        <div className="flex flex-col gap-8 inner min-h-screen  my-16 md:my-20">
+        <div className="flex flex-col gap-8 inner min-h-screen my-16 md:my-20">
             <h1 className="h1_text">Checkout</h1>
 
+            {/* Coach-seksjon */}
             <div className="flex flex-col gap-2">
                 {selectedCoachData && (
                     <div>
@@ -172,6 +217,7 @@ function CheckoutContent() {
                 </div>
             </div>
 
+            {/* Pakke-seksjon */}
             {selectedCoach && (
                 <div className="flex flex-col gap-3">
                     <h3 className="h3_text mb-1">Velg pakke:</h3>
@@ -189,17 +235,13 @@ function CheckoutContent() {
                                     setSelectedPackage(e.target.value)
                                 }
                                 className={`peer
-                                    col-start-1 row-start-1
-                                    appearance-none shrink-0
-                                    w-4 h-4 border-2 border-clr_primary_dark rounded-full
-                                    focus:outline-none focus:ring-offset-0 focus:ring-2 focus:ring-clr_primary
-                                    disabled:border-gray-400
-                                    relative
-                                    ${
-                                        selectedPackage === id
-                                            ? "radio-checked"
-                                            : ""
-                                    }`}
+                  col-start-1 row-start-1
+                  appearance-none shrink-0
+                  w-4 h-4 border-2 border-clr_primary_dark rounded-full
+                  focus:outline-none focus:ring-offset-0 focus:ring-2 focus:ring-clr_primary
+                  disabled:border-gray-400
+                  relative
+                  ${selectedPackage === id ? "radio-checked" : ""}`}
                             />
                             <div>
                                 <span className="font-bold">
@@ -214,6 +256,7 @@ function CheckoutContent() {
                 </div>
             )}
 
+            {/* Binding-seksjon */}
             {selectedPackage && (
                 <div className="flex flex-col gap-2">
                     <h3 className="h3_text mb-1">Velg bindingstid:</h3>
@@ -232,24 +275,20 @@ function CheckoutContent() {
                                         setSelectedBinding(e.target.value)
                                     }
                                     className={`peer
-                                                col-start-1 row-start-1
-                                                appearance-none shrink-0
-                                                w-4 h-4 border-2 border-clr_primary_dark rounded-full
-                                                focus:outline-none focus:ring-offset-0 focus:ring-2 focus:ring-clr_primary
-                                                disabled:border-gray-400
-                                                relative
-                                                ${
-                                                    selectedBinding === id
-                                                        ? "radio-checked"
-                                                        : ""
-                                                }`}
+                    col-start-1 row-start-1
+                    appearance-none shrink-0
+                    w-4 h-4 border-2 border-clr_primary_dark rounded-full
+                    focus:outline-none focus:ring-offset-0 focus:ring-2 focus:ring-clr_primary
+                    disabled:border-gray-400
+                    relative
+                    ${selectedBinding === id ? "radio-checked" : ""}`}
                                 />
                                 <span className="flex items-center gap-1">
                                     <span>{data.name}</span>
                                     <span className="text-clr_gray text-sm">
                                         -
                                     </span>
-                                    <span className=" text-clr_primary_dark text-sm">
+                                    <span className="text-clr_primary_dark text-sm">
                                         {data.price},- kr/mnd
                                     </span>
                                 </span>
@@ -259,17 +298,22 @@ function CheckoutContent() {
                 </div>
             )}
 
-            {selectedPackage && selectedBinding && selectedCoach ? (
+            {/* Hvis alt er valgt og ingen feilmelding -> Vis SubscribeButton */}
+            {isFormCompleteAndValid ? (
                 <SubscribeButton
                     priceId={getPriceId()}
                     coachId={selectedCoach}
-                    couponCode={couponCode} // Pass the coupon code here
+                    couponCode={couponCode} // Pass the coupon code
                 />
             ) : (
                 <button className="button cursor-not-allowed h-fit bg-transparent border-4 border-clr_white">
-                    Velg en coach og pakke for å fortsette
+                    {errorMessage
+                        ? "Korriger rabattkoden for å fortsette"
+                        : "Velg en coach og pakke for å fortsette"}
                 </button>
             )}
+
+            {/* Kampanjekode og feilmelding */}
             <div className="flex flex-col w-fit">
                 <label className="flex flex-col gap-1">
                     <span className="font-bold italic opacity-50 pl-4">
@@ -280,10 +324,16 @@ function CheckoutContent() {
                         value={couponCode}
                         onChange={handleCouponChange}
                         placeholder="Skriv inn din kode"
-                        className=" w-56 bg-clr_black border-2 border-clr_primary_dark rounded-full py-2 px-4 pr-8 leading-tight focus:outline-none focus:ring-2 focus:ring-clr_primary focus:border-clr_primary opacity-50 hover:opacity-100 focus:opacity-100"
+                        className="w-56 bg-clr_black border-2 border-clr_primary_dark rounded-full py-2 px-4 pr-8 leading-tight focus:outline-none focus:ring-2 focus:ring-clr_primary focus:border-clr_primary opacity-50 hover:opacity-100 focus:opacity-100"
                     />
                 </label>
+                {errorMessage && (
+                    <p className="text-red-500 text-sm mt-1 ml-4">
+                        {errorMessage}
+                    </p>
+                )}
             </div>
+
             <ToS />
         </div>
     );

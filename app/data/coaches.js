@@ -88,6 +88,31 @@ Med Anders Felipe som din trener, kan du være sikker på at du vil få den veil
         tjeneste2: "Treningsoppfølging",
     },
     {
+        id: "preben-gronseth",
+        name: "Preben Grønseth",
+        fname: "Preben",
+        image: "/preben-g.jpg",
+        specialties:
+            "Trening for muskelvekst, Trening for vektnedgang, Kondisjonstrening",
+        experiences: ["Personlig trener - AFPT"],
+        about: `Preben er en engasjert og motiverende coach. Han jobber som online coach for Maksimal Coaching å jobber til daglig som tømrer i Molde. 
+
+ERFARING:  
+Preben har over 10 års erfaring med fotball og styrketrening rundt dette. Spesialfeltet til Preben er trening for muskelvekst, økt maksimal styrke og idrettsrelatert trening rundt fotball og løping. Så om du ønsker økt prestasjon innen idrett eller bare mer muskelvekst og økt styrke, er dette coachen for deg! 
+
+HVORFOR VELGE PREBEN SOM COACH?:  
+Preben er en motiverende og kunnskapsrik coach. Han lytter til deg som kunde, og vil hjelpe deg mot dine mål på en morsom og effektiv måte! Preben tar på seg alle typer kunder og tar deg imot med åpne armer.
+`,
+        shortBio:
+            "Preben er en engasjert og motiverende coach. Han jobber som online coach for Maksimal Coaching å jobber til daglig som tømrer i Molde.",
+        email: "preben.gronseth@maksimalcoaching.no",
+        instagram: "https://www.instagram.com/preben_pt/",
+        instagramAt: "preben_pt",
+        tjeneste1: "Kombinert oppfølging",
+        tjeneste2: "Treningsoppfølging",
+        tjeneste3: "Kostholdsoppfølging",
+    },
+    {
         id: "eskil-engdahl",
         name: "Eskil Engdahl",
         fname: "Eskil",

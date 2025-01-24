@@ -66,28 +66,6 @@ Ina er en motiverende og kompetent trener som vil hjelpe akkurat deg til å nå 
         tjeneste3: "Kostholdsoppfølging",
     },
     {
-        id: "anders-felipe",
-        name: "Anders Felipe",
-        fname: "Anders",
-        image: "/anders-f.jpg",
-        specialties:
-            "Trening for muskelvekst, Trening for vektnedgang, Motivasjon",
-        experiences: ["Personlig trener - AFPT", "Coaching - AFPT"],
-        about: `Anders Felipe er en dedikert og kunnskapsrik trener. Hans spesialitet er trening innenfor muskelvekst og vektnedgang. Med en lidenskap for trening og samhold har Anders viet jobben sin til å hjelpe andre med å nå sine mål!
-
-        Han tror sterkt på at trening er for alle og at trening skal være gøy, og hans treningsfilosofi er klar
-        "du kan oppnå hva du ønsker så lenge du har riktig mindset og holder deg til planen" 
-
-HVORFOR VELGE ANDERS FELIPE SOM COACH?:
-Med Anders Felipe som din trener, kan du være sikker på at du vil få den veiledningen og motivasjonen du trenger for å bli en enda bedre versjon av deg selv. Han lytter til deg og hjelper akkurat deg på best mulig måte. Du vil ikke bare få en kostholdsplan/treningsplan, men et tilpasset opplegg for deg, med ukentlig oppfølging og justeringer.`,
-        shortBio:
-            "Med Anders Felipe som din trener, kan du være sikker på at du vil få den veiledningen og motivasjonen du trenger for å bli en enda bedre versjon av deg selv. Han lytter til deg og hjelper akkurat deg på best mulig måte. Du vil ikke bare få en kostholdsplan/treningsplan, men et tilpasset opplegg for deg, med ukentlig oppfølging og justeringer. ",
-        email: "anders.felipe@maksimalcoaching.no",
-        instagram: "https://www.instagram.com/felipejrjr/",
-        instagramAt: "felipejrjr",
-        tjeneste2: "Treningsoppfølging",
-    },
-    {
         id: "preben-gronseth",
         name: "Preben Grønseth",
         fname: "Preben",

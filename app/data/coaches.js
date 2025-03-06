@@ -232,31 +232,5 @@ Hvis du ønsker hjelp til å oppnå dine mål, vil Gro-Eli gjerne være med deg 
         tjeneste2: "Treningsoppfølging",
         tjeneste3: "Kostholdsoppfølging",
     },
-    {
-        id: "eskil-kaspersen-hagen",
-        name: "Eskil Kaspersen Hagen",
-        fname: "Eskil",
-        image: "/hello-eskil.jpg",
-        specialties: "Trening for muskelvekst, Maksimal styrke og Vektnedgang",
-        experiences: [
-            "Personlig trener, Active Education",
-            "Biomekanikk og avansert øvelsesanalyse, AFPT",
-        ],
-        about: `
-Eskil er en engasjert og kunnskapsrik coach med en genuin lidenskap for trening, kosthold og livsstil.
-Hans spesialfelt er trening for muskelvekst, kombinert med solid erfaring innen styrketrening og vektnedgang.
-Eskil legger stor vekt på å skape treningsopplegg som er både effektive og motiverende, skreddersydd for å hjelpe deg nå dine personlige mål.
 
-HVORFOR VELGE ESKIL SOM COACH?:
-Med sin utdanning som personlig trener fra Active Education og kurs i biomekanikk og avansert øvelsesanalyse fra AFPT, bringer Eskil en grundig forståelse av treningsprinsipper til bordet og vet hva som funker.
-Han er dedikert til å gi deg en positiv treningsopplevelse, hvor glede og fremgang går hånd i hånd.`,
-        shortBio:
-            "Eskil kombinerer sin lidenskap for trening med dyptgående kunnskap i biomekanikk og øvelsesanalyse. Hans skreddersydde programmer lover ikke bare resultater, men også en givende treningsopplevelse.",
-        email: "eskil.kaspersen@maksimalcoaching.no",
-        instagram: "https://www.instagram.com/eskilkaspersen/",
-        instagramAt: "eskilkaspersen",
-        tjeneste1: "Kombinert oppfølging",
-        tjeneste2: "Treningsoppfølging",
-        tjeneste3: "Kostholdsoppfølging",
-    },
 ];

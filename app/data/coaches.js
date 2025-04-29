@@ -130,6 +130,37 @@ Med sin egenerfaring, utdannelse, lidenskap for trening og egen livserfaring har
         tjeneste3: "Kostholdsoppfølging",
     },
     {
+        id: "sunniva-dutton",
+        name: "Sunniva Dutton",
+        fname: "Sunniva",
+        image: "/sunniva-d.jpg",
+        specialties:
+            "Trening for muskelvekst, Trening for styrke, Eksplosiv styrketrening",
+        experiences: [
+            "Personlig trener - NIH",
+            "Anatomical variations and effect on exercise - AFPT",
+            "6 års erfaring med styrketrening",
+        ],
+        about: `HVEM ER SUNNIVA?:
+Sunniva er en online coach som er dyktig og opptatt av å finne den beste slagplanen slik at du lykkes med dine mål. Hun jobber til daglig som Coach på Pumphouse i oslo. Her jobber hun med nybegynnere i alle aldere og erfarne kunder. 
+
+ERFARING: 
+Sunniva har 6 års erfaring med styrketrening. Hun har mest kunnskap innenfor muskelvekst, styrke og eksplosiv styrketrening. Hun har selv gått gjennom en livsstilsendring for å redusere symptomer på kronisk sykdom og har kjent på viktigheten av en sunn livsstil hvor livsgleden også står i fokus. Hvis du ønsker å kjenne på at kroppen din er sterk, sunn og noe du kan stole på i hverdagen så er Sunniva din coach!
+
+HVORFOR VELGE SUNNIVA?:
+Sunniva er en coach som er veldig opptatt av det medmenneskelige samtidig som hun oppdaterer på ekstra fagstoff som er relevant for deg og dine mål. Slik passer hun på at du alltid får den beste oppfølgingen. Videre er hun veldig opptatt av individuelle anatomiske forskjeller slik at du kan optimalisere treningen din. 
+
+`,
+        shortBio:
+            "Sunniva er en online coach som er dyktig og opptatt av å finne den beste slagplanen slik at du lykkes med dine mål. Hun jobber til daglig som Coach på Pumphouse i oslo. Her jobber hun med nybegynnere i alle aldere og erfarne kunder.",
+        email: "sunniva.dutton@maksimalcoaching.no",
+        instagram: "https://www.instagram.com/coachdutton_pt/",
+        instagramAt: "coachdutton_pt",
+        tjeneste1: "Kombinert oppfølging",
+        tjeneste2: "Treningsoppfølging",
+        tjeneste3: "Kostholdsoppfølging",
+    },
+    {
         id: "eskil-engdahl",
         name: "Eskil Engdahl",
         fname: "Eskil",
@@ -152,7 +183,7 @@ Han tilpasser treningen individuelt for deg og setter dine ønsker først!  Eski
         shortBio:
             "Eskil er en kunnskapsrik og dyktig coach. Han er en av de som var med å starte opp Maksimal Coaching. Han er fagansvarlig innenfor utholdenhetstrening i teamet og økonomisk ansvarlig i selskapet.",
         email: "eskil.engdahl@maksimalcoaching.no",
-        instagram: "https://www.instagram.com/felipejrjr/",
+        instagram: "https://www.instagram.com/eskilengdahl/",
         instagramAt: "eskilengdahl",
         tjeneste1: "Kombinert oppfølging",
         tjeneste2: "Treningsoppfølging",
@@ -232,5 +263,4 @@ Hvis du ønsker hjelp til å oppnå dine mål, vil Gro-Eli gjerne være med deg 
         tjeneste2: "Treningsoppfølging",
         tjeneste3: "Kostholdsoppfølging",
     },
-
 ];

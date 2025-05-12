@@ -10,9 +10,9 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
 // Map human-readable codes to actual Stripe coupon IDs
 // E.g., "newyears25" => "coupon_abc123"
 const COUPON_MAP = {
-    FRIENDS30: "2yc7lQpB", // <-- promoCode: "Coupon_ID",
-    COACHING20: "6GVtEab5", // <-- promoCode: "Coupon_ID",
-    STRONG1000: "Oqp44caR", // <-- promoCode: "Coupon_ID",
+    FRIENDS30: "promo_1RNvOhRsF5Uw8CjuEsnm6gon", // <-- promoCode: "Coupon_ID",
+    COACHING20: "promo_1QpcuGRsF5Uw8CjuPH56nlb7", // <-- promoCode: "Coupon_ID",
+    STRONG1000: "promo_1PvhJkRsF5Uw8CjuUD59WYE1", // <-- promoCode: "Coupon_ID",
 };
 export async function POST(request) {
     try {
@@ -52,19 +52,16 @@ export async function POST(request) {
         // If a coupon code is provided, map to correct Stripe coupon ID
         if (couponCode) {
             // Normalize user input (in case they type uppercase, etc.)
-            const normalizedCode = couponCode.trim().toLowerCase();
-            const stripeCouponId = COUPON_MAP[normalizedCode];
+            const normalizedCode = couponCode.trim().toUpperCase();
+            const stripePromoId = COUPON_MAP[normalizedCode];
 
-            if (stripeCouponId) {
-                // If we found a matching coupon ID, add discount to session
+            if (stripePromoId) {
                 sessionData.discounts = [
                     {
-                        coupon: stripeCouponId,
+                        promotion_code: stripePromoId,
                     },
                 ];
             } else {
-                // Optionally throw an error or ignore
-                // If you want to prevent checkout if coupon is invalid:
                 return NextResponse.json(
                     { error: `Ugyldig kupongkode: ${couponCode}` },
                     { status: 400 }

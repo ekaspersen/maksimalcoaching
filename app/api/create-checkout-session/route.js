@@ -13,6 +13,7 @@ const COUPON_MAP = {
     FRIENDS30: "promo_1RNvOhRsF5Uw8CjuEsnm6gon", // <-- promoCode: "Coupon_ID",
     COACHING20: "promo_1QpcuGRsF5Uw8CjuPH56nlb7", // <-- promoCode: "Coupon_ID",
     STRONG1000: "promo_1PvhJkRsF5Uw8CjuUD59WYE1", // <-- promoCode: "Coupon_ID",
+    MAKSIMAL4040: "promo_1RYC2WRsF5Uw8Cju29vxHGOG", // <-- promoCode: "Coupon_ID",
 };
 export async function POST(request) {
     try {

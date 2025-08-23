@@ -97,6 +97,7 @@ Preben er en motiverende og kunnskapsrik coach. Han lytter til deg som kunde, og
     tjeneste2: "Treningsoppfølging",
     tjeneste3: "Kostholdsoppfølging",
   },
+
   {
     id: "iselin-falkgard",
     name: "Iselin Falkgård",
@@ -130,8 +131,42 @@ Med sin egenerfaring, utdannelse, lidenskap for trening og egen livserfaring har
     shortBio:
       "Iselin er genuint opptatt av å hjelpe deg i din hverdag med gode vaner, fysisk aktivitet, trening og kosthold! Hun jobber til daglig som pt på E2 og bor i Sandefjord. Hun skal nå jobbe som online coach for oss i maksimal coaching noe vi gleder oss til. ",
     email: "iselin.falkgard@maksimalcoaching.no",
-    instagram: "https://www.instagram.com/preben_pt/",
+    instagram: "https://www.instagram.com/pt_iselin/",
     instagramAt: "pt_iselin",
+    tjeneste1: "Kombinert oppfølging",
+    tjeneste2: "Treningsoppfølging",
+    tjeneste3: "Kostholdsoppfølging",
+  },
+  {
+    id: "linn-save",
+    name: "Linn Save",
+    fname: "Linn",
+    image: "/linn-s.jpg",
+    specialties:
+      "Trening for muskelvekst, Trening for vektnedgang, ernæring og kosthold, Trening før, under og etter graviditet",
+    experiences: [
+      "Bachelor i trening, helse og prestasjon - NIH",
+      "Personlig trener - NIH",
+      "Programdesign - Sats",
+      "Coaching - Sats",
+      "Health and lifestyle - Sats",
+      "Kosthold - Sats",
+    ],
+    about: `HVEM ER LINN?:
+        Linn er en engasjert online coach med flere års erfaring fra treningsbransjen. Hun brenner for å hjelpe andre med å komme i gang med sunne vaner, kjenne på mestring og oppleve ekte treningsglede. Med et sterkt ønske om å gjøre veien mot dine mål enklere og mer motiverende, følger Linn deg tett hele veien – med fokus på struktur, kontinuitet og gode rutiner som varer. 
+ 
+ERFARING:  
+Linn har en bachelorgrad i trening, helse og prestasjon, og er i tillegg utdannet personlig trener – begge deler fra Norges Idrettshøgskole. Hun har jobbet fem år som personlig trener og er fortsatt aktiv som gruppeinstruktør. Linn kombinerer solid utdanning med mange års personlig erfaring innen styrke- og utholdenhetstrening. Hun har jobbet med alt fra vektnedgang og muskelvekst, til livsstilsrelaterte helseutfordringer og trening under og etter graviditet.
+
+HVORFOR VELGE LINN?:  
+Hos Linn får du ikke et generisk opplegg – du får en plan som er tilpasset deg, din hverdag og dine mål. Hun legger stor vekt på individuell tilpasning, tett oppfølging og støtte gjennom hele prosessen. Linn er der for deg som ønsker en livsstilsendring, bygge muskler eller trenger hjelp til å få bedre struktur og progresjon i treningen. Sammen bygger dere en livsstil som gir resultater, og som faktisk varer.
+
+`,
+    shortBio:
+      "Linn har en bachelorgrad i trening, helse og prestasjon, og er i tillegg utdannet personlig trener – begge deler fra Norges Idrettshøgskole. Hun har jobbet fem år som personlig trener og er fortsatt aktiv som gruppeinstruktør. Linn kombinerer solid utdanning med mange års personlig erfaring innen styrke- og utholdenhetstrening. Hun har jobbet med alt fra vektnedgang og muskelvekst, til livsstilsrelaterte helseutfordringer og trening under og etter graviditet.",
+    email: "linn.save@maksimalcoaching.no",
+    instagram: "https://www.instagram.com/linnsave/",
+    instagramAt: "linnsave",
     tjeneste1: "Kombinert oppfølging",
     tjeneste2: "Treningsoppfølging",
     tjeneste3: "Kostholdsoppfølging",
@@ -167,6 +202,36 @@ Sunniva er en coach som er veldig opptatt av det medmenneskelige samtidig som hu
     tjeneste2: "Treningsoppfølging",
     tjeneste3: "Kostholdsoppfølging",
   },
+
+  {
+    id: "malin-groenli",
+    name: "Malin Lyngstad Groenli",
+    fname: "Malin",
+    image: "/malin-g.jpg",
+    specialties:
+      "Trening for muskelvekst, Trening for vektnedgang, ernæring og kosthold, Livskvalitet og mestring",
+    experiences: [
+      "Bachelor i Samfunns- og idrettsvitenskap",
+      "Fullfører master i Idrettsvitenskap våren 2026",
+    ],
+    about: `HVEM ER MALIN?:
+        Malin har hele livet hatt en stor interesse for fysisk aktivitet, og har funnet glede i mange ulike treningsformer. Det inkluderer blant annet organisert idrett som fotball og håndball. De siste årene har hun derimot fått enda mer sansen for styrketrening, og bruker den største delen av treningshverdagen sin på det. 
+ 
+Malin har lyst til å dele lidenskapen hun har til fysisk aktivitet med deg, og bidra til at du får muligheten til å finne en treningsmetode som fungerer bra for deg og din hverdag. Hun mener at nøkkelen ligger i å finne en treningsform man trives med, som også kan bidra til bedre helse, økt livskvalitet og mestring.
+
+HVORFOR VELGE MALIN SOM COACH?:  
+Malin har en allsidig treningsbakgrunn og er opptatt av treningsglede, i tillegg til å bygge vaner som varer. Hun er en tilpasningsdyktig coach som ser deg og dine behov. Hun møter deg der du er, slik at dere sammen kan finne den beste veien mot ditt mål.
+`,
+    shortBio:
+      "Malin har en allsidig treningsbakgrunn og er opptatt av treningsglede, i tillegg til å bygge vaner som varer. Hun er en tilpasningsdyktig coach som ser deg og dine behov. Hun møter deg der du er, slik at dere sammen kan finne den beste veien mot ditt mål.",
+    email: "malin.groenli@maksimalcoaching.no",
+    instagram: "https://www.instagram.com/malingroenli/",
+    instagramAt: "malingroenli",
+    tjeneste1: "Kombinert oppfølging",
+    tjeneste2: "Treningsoppfølging",
+    tjeneste3: "Kostholdsoppfølging",
+  },
+
   {
     id: "eskil-engdahl",
     name: "Eskil Engdahl",
@@ -192,80 +257,6 @@ Han tilpasser treningen individuelt for deg og setter dine ønsker først!  Eski
     email: "eskil.engdahl@maksimalcoaching.no",
     instagram: "https://www.instagram.com/eskilengdahl/",
     instagramAt: "eskilengdahl",
-    tjeneste1: "Kombinert oppfølging",
-    tjeneste2: "Treningsoppfølging",
-    tjeneste3: "Kostholdsoppfølging",
-  },
-  {
-    id: "gro-eli-pedersen",
-    name: "Gro Eli Pedersen",
-    fname: "Gro Eli",
-    image: "/gro-e.jpg",
-    specialties:
-      "Trening før, under og etter graviditet, Trening for muskelvekst og bedre helse, Kosthold, rehabilitering",
-    experiences: [
-      "Bachelor i Ergoterapi, NTNU Trondheim",
-      "Personlig trener, AFPT",
-      "Kostholdsveileder, AFPT",
-    ],
-    about: `BAKGRUNN:
-Gro-Eli har vært aktiv gjennom hele livet og drevet med fotball i over 10 år. I tillegg har hun flere års erfaring med styrketrening. Trening har blitt en del av hennes hverdag og en rutine i livet.
-
-UTDANNING:
-Utover dette har hun en Bachelor i Ergoterapi. Hun brenner for at alle skal kunne delta i aktivitet uansett hvilke forutsetninger eller utgangspunkt de har, og har siden 2021 jobbet med hverdagsrehabilitering.
-Gro-Eli er utdannet personlig trener og kostholdsveileder via Akademiet for Personlig Trening. Hun er opptatt av at alle skal kunne kjenne på motivasjon, mestringsfølelse og treningsglede.
-
-HVORFOR VELGE GRO ELI SOM ONLINE COACH:
-Med Gro-Eli som coach får du en som er opptatt av at du skal nå ditt mål. Hun ønsker at akkurat du skal finne en balanse i livet ditt som fungerer for deg, en varig endring som du vil trives med – og det skal dere gjøre sammen!
-
-COACHING STIL:
-Du vil få en coach som motiverer og heier på deg, gir deg en dytt når du trenger det og som er tilgjengelig når du måtte ønske. Hun ønsker at du skal synes trening er gøy!
-Litt er bedre enn ingenting, og hun ønsker å vise at en endring ikke trenger å være verken avansert eller vanskelig. Gro-Eli vil være en ressurs slik at du kan kjenne på motivasjon og mestringsfølelse uansett hvilket utgangspunkt du har!
-
-HELHETLIG TILNÆRMING:
-Sammen vil dere se fremgang som omhandler hele deg - ikke bare på treningsfronten. Det finnes flere fordeler med et balansert liv og en hverdag med rutiner. Bedre søvn som igjen resulterer i bedre humør og mer energi, i tillegg til bedre selvfølelse og selvtillit er eksempler på fordeler som medfølger.
-Hvis du ønsker hjelp til å oppnå dine mål, vil Gro-Eli gjerne være med deg på veien for å få det til å skje!`,
-    shortBio:
-      "Med Gro-Eli som coach får du en som er opptatt av at du skal nå ditt mål. Hun ønsker at akkurat du skal finne en balanse i livet ditt som fungerer for deg, en varig endring som du vil trives med – og det skal dere gjøre sammen! Litt er bedre enn ingenting, og hun ønsker å vise at en endring ikke trenger å være verken avansert eller vanskelig. Gro-Eli vil være en ressurs slik at du kan kjenne på motivasjon og mestringsfølelse uansett hvilket utgangspunkt du har!",
-    email: "gro.eli@maksimalcoaching.no",
-    instagram: "https://www.instagram.com/groeli_trener/",
-    instagramAt: "groeli_trener",
-    tjeneste1: "Kombinert oppfølging",
-    tjeneste2: "Treningsoppfølging",
-    tjeneste3: "Kostholdsoppfølging",
-  },
-  {
-    id: "lena-prestmarken",
-    name: "Lena Prestmarken",
-    fname: "Lena",
-    image: "/lena-p.jpg",
-    specialties:
-      "Trening før, under og etter graviditet, Trening for muskelvekst og bedre helse, Kosthold, rehabilitering",
-    experiences: [
-      "Personlig trener, Safe Education",
-      "Instruktør gruppetrening, Safe Education",
-      "Health and lifestyle, Sats Academy",
-      "Rehab/prehab, Sats Academy",
-      "Kostholdsveileder, Sats Academy",
-      "Coaching, Sats Academy",
-      "Trening under og etter svangerskap, Sats Academy",
-    ],
-    about: `
-            Lena er en av våre mest erfarne personlige trenere. Hun har jobbet som personlig trener og gruppetreningsinstruktør fulltid i 10 år. 
-
-            Gjennom årene har hun anskaffet seg bred erfaring og kunnskap innen trening og helse, og har et helhetlig syn på dette. 
-
-            Lena har god kompetanse innen vektnedgang, trening under og etter svangerskap, rehabilitering og generell styrketrening. 
-
-            HVORFOR VELGE LENA SOM COACH?:
-
-            Med Lena som coach får du en engasjert og motiverende coach som hjelper deg til å nå dine mål. Sammen finner dere en vei som passer for akkurat deg og din livssituasjon, og hun tilpasser og skreddersyr trening etter ditt utgangspunkt og mål. Lena hjelper deg til å skape gode vaner som varer livet ut. 
-        `,
-    shortBio:
-      "Med Lena som coach får du en engasjert og motiverende coach som hjelper deg nå dine mål. Sammen finner dere en vei som passer for akkurat deg og din livssituasjon. Hun tilpasser og skreddersyr trening etter ditt utgangspunkt og mål. Lena hjelper deg til å skape gode vaner som varer livet ut. ",
-    email: "lena.prestmarken@maksimalcoaching.no",
-    instagram: "https://www.instagram.com/lenaprestmarken/",
-    instagramAt: "lenaprestmarken",
     tjeneste1: "Kombinert oppfølging",
     tjeneste2: "Treningsoppfølging",
     tjeneste3: "Kostholdsoppfølging",

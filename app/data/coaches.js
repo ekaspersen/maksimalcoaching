@@ -138,6 +138,46 @@ Med sin egenerfaring, utdannelse, lidenskap for trening og egen livserfaring har
     tjeneste3: "Kostholdsoppfølging",
   },
   {
+    id: "ingrid-jakobsen",
+    name: "Ingrid Jakobsen",
+    fname: "Ingrid",
+    image: "/ingrid-j.jpg",
+    specialties:
+      "Skadeforebyggende trening, Trening for vektnedgang, ernæring og kosthold",
+    experiences: [
+      "Bachelor i idrett, ernæring og helse ",
+      "Sertifisert personlig trener",
+      "Master i treningsfysiologi",
+      "Sertifisert helseveileder",
+      "Kurs - antidoping ansvarlig, antidoping Norge",
+      "Kurs - rådgivning for spiseforstyrrelser, ROS",
+      "BASIS fallforebyggende trening, Helsedirektoratet",
+    ],
+    about: `HVEM ER INGRID?:
+        Ingrid er 28 år, og har alltid vært opptatt av fysisk aktivitet på en eller annen måte. Ifra ung alder har det alltid vært fotball som har stått i sentrum, men de senere årene har hun fått sansen for styrketrening, padel og toppturer. Hun har vært i treningsbransjen siden 2022 og hun jobber for tiden på et lite treningssenter på bygda, hvor hun hjelper uerfarne unge og eldre. 
+
+Hun brenner for at alle skal få muligheten til å leve det livet de har lyst til og leve med fokus på deres ønsker, mål og utgangspunkt. 
+
+
+ERFARING:  
+Ingrid har 5+ års erfaring med styrketrening og har jobbet i treningsbransjen siden 2022. Hun har også vært aktiv fotballspiller både i toppfotballen og i breddefotballen i over 20 år.
+
+
+HVORFOR VELGE INGRID?:  
+Ingrid har en lang idrettsbakgrunn, og med erfaring fra litt ulike typer fysisk aktivitet. Ingrid er opptatt av at det ikke skal være noen strenge dietter og treningsregimer, en endring vil i perioder være tungt, men det skal alltid være en følelse av mestring på veien.
+
+Ingrid er en coach som er opptatt av å se deg for den du er og en du skal kunne prate med om alt, både i opp- og nedturer. Hun jobber med alle typer kunder.
+`,
+    shortBio:
+      "Ingrid er opptatt av at det ikke skal være noen strenge dietter og treningsregimer, en endring vil i perioder være tungt, men det skal alltid være en følelse av mestring på veien.",
+    email: "ingrid.jakobsen@maksimalcoaching.no",
+    instagram: "https://www.instagram.com/helseveileder_ingrid/",
+    instagramAt: "helseveileder_ingrid",
+    tjeneste1: "Kombinert oppfølging",
+    tjeneste2: "Treningsoppfølging",
+    tjeneste3: "Kostholdsoppfølging",
+  },
+  {
     id: "linn-save",
     name: "Linn Save",
     fname: "Linn",

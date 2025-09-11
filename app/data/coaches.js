@@ -244,6 +244,41 @@ Sunniva er en coach som er veldig opptatt av det medmenneskelige samtidig som hu
   },
 
   {
+    id: "nina-sb",
+    name: "Nina S. Bjørnesset",
+    fname: "Nina",
+    image: "/nina-sb.jpg",
+    specialties:
+      "Trening for vektnedgang, trening for muskelvekst, kosthold og ernæring, livsstil og mestring , trening og kosthold for kvinner i overgangssalderen",
+    experiences: [
+      "Personlig trener – Active Education",
+      "Kostholdsveileder – Active Education",
+      "Meno Trainer – Meno business",
+    ],
+    about: `HVEM ER NINA?:
+        Nina er en online coach med et sterkt engasjement for å hjelpe med å finne balansen mellom helse, jobb, familieliv og egenomsorg. Med et helhetlig fokus og en forståelse for hvordan livet faktisk ser ut, skreddersyr hun trenings- og kostholdsplaner som passer inn i en travel hverdag – uten press, pekefingre eller dietter.
+
+        Som mamma i full jobb vet hun hvor krevende det kan være å sette seg selv først. Hun har selv møtt ulike utfordringer i livet som gjør at hun møter hver kunde med forståelse, omsorg og et ekte ønske om å bidra til varig endring – både fysisk og mentalt.
+
+HVORFOR VELGE NINA SOM COACH?:  
+
+Nina brenner for å hjelpe andre til å føle seg sterke, trygge og i balanse – uansett utgangspunkt. Gjennom sitt arbeid ønsker hun å vise at det er mulig å ta vare på seg selv, uten å måtte være "perfekt".
+
+Hun har erfaring fra mange år med styrketrening og har tidligere spilt både håndball og fotball. Hun holder selv på med en livsstilsendring etter hun ble utbrent for noen år siden og vet hvor vanskelig det kan være å komme i gang med endringer og finne gode løsninger. 
+
+Hos Nina handler trening og kosthold om mer enn bare kropp – det handler om hele mennesket.
+`,
+    shortBio:
+      "Nina er en online coach med et sterkt engasjement for å hjelpe med å finne balansen mellom helse, jobb, familieliv og egenomsorg. Med et helhetlig fokus og en forståelse for hvordan livet faktisk ser ut, skreddersyr hun trenings- og kostholdsplaner som passer inn i en travel hverdag – uten press, pekefingre eller dietter.",
+    email: "malin.groenli@maksimalcoaching.no",
+    instagram: "https://www.instagram.com/pt.coach.nina/",
+    instagramAt: "pt.coach.nina",
+    tjeneste1: "Kombinert oppfølging",
+    tjeneste2: "Treningsoppfølging",
+    tjeneste3: "Kostholdsoppfølging",
+  },
+
+  {
     id: "malin-groenli",
     name: "Malin Lyngstad Groenli",
     fname: "Malin",

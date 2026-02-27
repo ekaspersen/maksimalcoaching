@@ -98,45 +98,7 @@ Preben er en motiverende og kunnskapsrik coach. Han lytter til deg som kunde, og
     tjeneste3: "Kostholdsoppfølging",
   },
 
-  {
-    id: "iselin-falkgard",
-    name: "Iselin Falkgård",
-    fname: "Iselin",
-    image: "/iselin-f.png",
-    specialties:
-      "Trening for muskelvekst, Trening for vektnedgang, ernæring og kosthold",
-    experiences: [
-      "Personlig trener - AFPT",
-      "Rehab Trainer - AFPT",
-      "Strength Coach - AFPT",
-      "Kostholds Veileder - AFPT",
-      "Helsefagarbeider",
-    ],
-    about: `
-Iselin er genuint opptatt av å hjelpe deg i din hverdag med gode vaner, fysisk aktivitet, trening og kosthold! Hun jobber til daglig som pt på E2 og bor i Sandefjord. Hun skal nå jobbe som online coach for oss i maksimal coaching noe vi gleder oss til. 
 
-ERFARING: 
-Iselin er 31 år og har jobbet som pt i snart 3 år. 
-
-Iselin er utdannet personlig trener gjennom AFPT i tillegg til at hun har mange kurs innen styrke trening og trening for rehabilitering.
-Iselin har selv erfaring med at «livet skjer». 
-
-Hun har selv opplevd ting i livet som har påvirket hennes arbeidsdag. Her har hun erfart hvor viktig fysisk aktivitet, trening og er sunt kosthold har og si. Hun har god kompetanse innen trening for økt muskelvekst, økt maksimal styrke, eksplosiv trening og trening for rehabilitering av skader. 
-Så uavhengig av hva du trenger hjelp til kan nok Iselin være til stor hjelp for akkurat deg! 
-
-HVORFOR VELGE ISELIN SOM COACH?:
-Med sin egenerfaring, utdannelse, lidenskap for trening og egen livserfaring har hun god kompetanse for å hjelpe deg mot en bedre hverdag og dine mål. Iselin sørger alltid for å holde seg faglig oppdatert for å få deg et best mulig produkt. Hun vil hjelpe deg til å finne en livsstil der hode og kropp samarbeider best mulig. Hun hjelper deg når livet er på topp og på bunn! Hun tilpasser treningen etter ditt liv og lytter til det du har og si. For Iselin spiller det ingen rolle hvor mye eller lite erfaring du har, for alle starter et sted. 
-
-`,
-    shortBio:
-      "Iselin er genuint opptatt av å hjelpe deg i din hverdag med gode vaner, fysisk aktivitet, trening og kosthold! Hun jobber til daglig som pt på E2 og bor i Sandefjord. Hun skal nå jobbe som online coach for oss i maksimal coaching noe vi gleder oss til. ",
-    email: "iselin.falkgard@maksimalcoaching.no",
-    instagram: "https://www.instagram.com/pt_iselin/",
-    instagramAt: "pt_iselin",
-    tjeneste1: "Kombinert oppfølging",
-    tjeneste2: "Treningsoppfølging",
-    tjeneste3: "Kostholdsoppfølging",
-  },
   {
     id: "ingrid-jakobsen",
     name: "Ingrid Jakobsen",

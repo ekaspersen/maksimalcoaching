@@ -140,40 +140,6 @@ Ingrid er en coach som er opptatt av å se deg for den du er og en du skal kunne
     tjeneste3: "Kostholdsoppfølging",
   },
   {
-    id: "linn-save",
-    name: "Linn Save",
-    fname: "Linn",
-    image: "/linn-s.jpg",
-    specialties:
-      "Trening for muskelvekst, Trening for vektnedgang, ernæring og kosthold, Trening før, under og etter graviditet",
-    experiences: [
-      "Bachelor i trening, helse og prestasjon - NIH",
-      "Personlig trener - NIH",
-      "Programdesign - Sats",
-      "Coaching - Sats",
-      "Health and lifestyle - Sats",
-      "Kosthold - Sats",
-    ],
-    about: `HVEM ER LINN?:
-        Linn er en engasjert online coach med flere års erfaring fra treningsbransjen. Hun brenner for å hjelpe andre med å komme i gang med sunne vaner, kjenne på mestring og oppleve ekte treningsglede. Med et sterkt ønske om å gjøre veien mot dine mål enklere og mer motiverende, følger Linn deg tett hele veien – med fokus på struktur, kontinuitet og gode rutiner som varer. 
- 
-ERFARING:  
-Linn har en bachelorgrad i trening, helse og prestasjon, og er i tillegg utdannet personlig trener – begge deler fra Norges Idrettshøgskole. Hun har jobbet fem år som personlig trener og er fortsatt aktiv som gruppeinstruktør. Linn kombinerer solid utdanning med mange års personlig erfaring innen styrke- og utholdenhetstrening. Hun har jobbet med alt fra vektnedgang og muskelvekst, til livsstilsrelaterte helseutfordringer og trening under og etter graviditet.
-
-HVORFOR VELGE LINN?:  
-Hos Linn får du ikke et generisk opplegg – du får en plan som er tilpasset deg, din hverdag og dine mål. Hun legger stor vekt på individuell tilpasning, tett oppfølging og støtte gjennom hele prosessen. Linn er der for deg som ønsker en livsstilsendring, bygge muskler eller trenger hjelp til å få bedre struktur og progresjon i treningen. Sammen bygger dere en livsstil som gir resultater, og som faktisk varer.
-
-`,
-    shortBio:
-      "Linn har en bachelorgrad i trening, helse og prestasjon, og er i tillegg utdannet personlig trener – begge deler fra Norges Idrettshøgskole. Hun har jobbet fem år som personlig trener og er fortsatt aktiv som gruppeinstruktør. Linn kombinerer solid utdanning med mange års personlig erfaring innen styrke- og utholdenhetstrening. Hun har jobbet med alt fra vektnedgang og muskelvekst, til livsstilsrelaterte helseutfordringer og trening under og etter graviditet.",
-    email: "linn.save@maksimalcoaching.no",
-    instagram: "https://www.instagram.com/linnsave/",
-    instagramAt: "linnsave",
-    tjeneste1: "Kombinert oppfølging",
-    tjeneste2: "Treningsoppfølging",
-    tjeneste3: "Kostholdsoppfølging",
-  },
-  {
     id: "sunniva-dutton",
     name: "Sunniva Dutton",
     fname: "Sunniva",
@@ -204,36 +170,6 @@ Sunniva er en coach som er veldig opptatt av det medmenneskelige samtidig som hu
     tjeneste2: "Treningsoppfølging",
     tjeneste3: "Kostholdsoppfølging",
   },
-
-  {
-    id: "malin-groenli",
-    name: "Malin Lyngstad Groenli",
-    fname: "Malin",
-    image: "/malin-g.jpg",
-    specialties:
-      "Trening for muskelvekst, Trening for vektnedgang, ernæring og kosthold, Livskvalitet og mestring",
-    experiences: [
-      "Bachelor i Samfunns- og idrettsvitenskap",
-      "Fullfører master i Idrettsvitenskap våren 2026",
-    ],
-    about: `HVEM ER MALIN?:
-        Malin har hele livet hatt en stor interesse for fysisk aktivitet, og har funnet glede i mange ulike treningsformer. Det inkluderer blant annet organisert idrett som fotball og håndball. De siste årene har hun derimot fått enda mer sansen for styrketrening, og bruker den største delen av treningshverdagen sin på det. 
- 
-Malin har lyst til å dele lidenskapen hun har til fysisk aktivitet med deg, og bidra til at du får muligheten til å finne en treningsmetode som fungerer bra for deg og din hverdag. Hun mener at nøkkelen ligger i å finne en treningsform man trives med, som også kan bidra til bedre helse, økt livskvalitet og mestring.
-
-HVORFOR VELGE MALIN SOM COACH?:  
-Malin har en allsidig treningsbakgrunn og er opptatt av treningsglede, i tillegg til å bygge vaner som varer. Hun er en tilpasningsdyktig coach som ser deg og dine behov. Hun møter deg der du er, slik at dere sammen kan finne den beste veien mot ditt mål.
-`,
-    shortBio:
-      "Malin har en allsidig treningsbakgrunn og er opptatt av treningsglede, i tillegg til å bygge vaner som varer. Hun er en tilpasningsdyktig coach som ser deg og dine behov. Hun møter deg der du er, slik at dere sammen kan finne den beste veien mot ditt mål.",
-    email: "malin.groenli@maksimalcoaching.no",
-    instagram: "https://www.instagram.com/malingroenli/",
-    instagramAt: "malingroenli",
-    tjeneste1: "Kombinert oppfølging",
-    tjeneste2: "Treningsoppfølging",
-    tjeneste3: "Kostholdsoppfølging",
-  },
-
   {
     id: "eskil-engdahl",
     name: "Eskil Engdahl",

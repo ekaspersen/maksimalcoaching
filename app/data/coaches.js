@@ -168,6 +168,35 @@ Ingrid er en coach som er opptatt av å se deg for den du er og en du skal kunne
         tjeneste3: "Kostholdsoppfølging",
     },
     {
+        id: "sara-ayari",
+        name: "Sara Ayari",
+        fname: "Sara",
+        image: "/saraayari.jpg",
+        specialties: "Muskelvekst, Økt styrke, Livsstilsendring og Vektnedgang",
+        experiences: [
+            "Ambulansearbeider med videreutdanning som paramedisiner",
+            "Personlig trener - AFPT",
+            "Kostholdsveileder - AFPT (under utdanning)",
+        ],
+        about: `
+ERFARING:
+Sara har trent styrke seriøst i over 5 år, og kombinerer dette med erfaring fra ambulansetjenesten og som personlig trener. Gjennom arbeidet sitt har hun opparbeidet seg solid kunnskap om kropp, helse og mennesker. Hun hjelper kunder med ulike mål, enten det handler om å komme i gang med trening, bygge muskler, bli sterkere, gå ned i vekt eller etablere sunnere og mer bærekraftige rutiner i hverdagen.
+
+BALANSE I HVERDAGEN:
+Sara tror på en helhetlig tilnærming til helse, der trening, kosthold og livsstil fungerer sammen. For henne er det viktig at en sunn livsstil også gir rom for balanse og livet ellers, slik at gode vaner blir realistiske å opprettholde over tid.
+
+HVORFOR VELGE SARA SOM COACH?:
+Sara er en coach som er opptatt av mer enn bare treningsresultater. Hun ønsker å hjelpe kundene sine med å bygge en sterkere kropp, bedre mental helse og en livsstil de faktisk trives med. Med fokus på individuell tilpasning, tett oppfølging og langsiktig progresjon gir hun kundene verktøyene de trenger for å lykkes – og for å skape resultater som varer.`,
+        shortBio:
+            "Sara er en coach med bakgrunn fra ambulansetjenesten og en sterk lidenskap for styrketrening, helse og balanse. Hun hjelper kundene sine med å skape resultater som varer gjennom individuell tilpasning, tett oppfølging og bærekraftige vaner.",
+        email: "sara.ayari@maksimalcoaching.no",
+        instagram: "https://www.instagram.com/sara_ayarifitness/",
+        instagramAt: "sara_ayarifitness",
+        tjeneste1: "Kombinert oppfølging",
+        tjeneste2: "Treningsoppfølging",
+        tjeneste3: "Kostholdsoppfølging",
+    },
+    {
         id: "sunniva-dutton",
         name: "Sunniva Dutton",
         fname: "Sunniva",

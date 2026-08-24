@@ -42,6 +42,37 @@ Markus tar på seg alle typer kunder og brenner for å hjelpe akkurat deg mot di
         tjeneste3: "Kostholdsoppfølging",
     },
     {
+        id: "carina-berland",
+        name: "Carina Berland",
+        fname: "Carina",
+        image: "/carina-b.jpg",
+        specialties:
+            "Kostholdsveiledning, Trening for vektnedgang, Styrketrening for økt muskelvekst og maksimal styrke",
+        experiences: [
+            "Bachelor i sykepleie – NTNU",
+            "Årsstudium i trening, helse og prestasjon - UiT",
+            "HYROX365 Foundation Course",
+            "Gruppeinstruktør innen indoor cycling, styrketrening, HIIT og HYROX – SATS Academy",
+        ],
+        about: `
+HVEM ER CARINA?:
+Carina er en engasjert coach som er opptatt av helheten. Hun brenner for en aktiv livsstil og trening som en investering i egen helse. For Carina er trening for alle, og hun ønsker å hjelpe både deg som vil komme i gang og deg som ønsker å utvikle deg og prestere bedre.
+
+ERFARING:
+Carina har erfaring med styrketrening, løping og HYROX, både gjennom egen trening og som instruktør. Hun har selv gjennomgått en livsstilsendring og vet hvor viktig mestring, gode vaner og kontinuitet er for å skape resultater som varer.
+
+HVORFOR VELGE CARINA SOM COACH?:
+Hos Carina får du mer enn bare et treningsprogram. Du får individuell oppfølging og en plan tilpasset dine mål, ditt nivå og din hverdag. Med bakgrunn innen både helse og trening ønsker hun å hjelpe deg med å bli sterkere, få bedre kondisjon og oppleve fremgang, samtidig som treningen skal være noe du trives med og kan opprettholde over tid.`,
+        shortBio:
+            "Carina er en engasjert coach som er opptatt av helheten. Hun brenner for en aktiv livsstil og trening som en investering i egen helse. For Carina er trening for alle, og hun ønsker å hjelpe både deg som vil komme i gang og deg som ønsker å utvikle deg og prestere bedre.",
+        email: "carina.berland@maksimalcoaching.no",
+        instagram: "https://www.instagram.com/carina_berland/",
+        instagramAt: "carina_berland",
+        tjeneste1: "Kombinert oppfølging",
+        tjeneste2: "Treningsoppfølging",
+        tjeneste3: "Kostholdsoppfølging",
+    },
+    {
         id: "ina-kolstad-rustad",
         name: "Ina Kolstad Rustad",
         fname: "Ina",
